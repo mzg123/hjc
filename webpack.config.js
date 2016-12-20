@@ -84,7 +84,8 @@ module.exports = {
 
             //{ test: /\.css$/, loader: "style!css"},
 
-            { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")}
+            { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")} ,
+           {test: /\.scss?$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "sass-loader")}
             //,{ test: /\.js$/, loader: "babel",exclude: /node_modules/}
             //, {
             //    test: /\.(jpe?g|png|gif|svg)$/i,

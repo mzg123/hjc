@@ -1,6 +1,7 @@
 var React = require('react');
 var reactRedux = require('react-redux')
 require("./tree.css");
+require("./test.scss");
 var Redux=require("redux");
 var actions=require("../redux/actions.js");
 var reactRouter=require('react-router');
