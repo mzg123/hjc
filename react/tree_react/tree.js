@@ -4,8 +4,8 @@ require("./tree.css");
 require("./test.scss");
 var Redux=require("redux");
 var actions=require("../redux/actions.js");
-//var reactRouter=require('react-router');
-import reactRouter from 'react-router';
+var reactRouter=require('react-router');
+//import reactRouter from 'react-router';
 //import { Link } from 'react-router';
 var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Link;
 
