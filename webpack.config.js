@@ -85,7 +85,7 @@ module.exports = {
             //{ test: /\.css$/, loader: "style!css"},
 
             { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")} ,
-           {test: /\.scss?$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "sass-loader")}
+           {test: /\.scss?$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")}
             //,{ test: /\.js$/, loader: "babel",exclude: /node_modules/}
             //, {
             //    test: /\.(jpe?g|png|gif|svg)$/i,
@@ -126,20 +126,20 @@ module.exports = {
         //    hash:true
         //}),
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        new webpack.optimize.UglifyJsPlugin({    //压缩代码
-            compress: {
-                warnings: false
-            },
-            output: {
-                comments: false // remove all comments
-            },
-            except: ['$super', '$', 'exports', 'require']    //排除关键字
-        }) ,
+        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
+        //    compress: {
+        //        warnings: false
+        //    },
+        //    output: {
+        //        comments: false // remove all comments
+        //    },
+        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
+        //}) ,
        new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify("production")
             }
-        })
+       })
         //,new webpack.ProvidePlugin({
         //    'Moment': 'moment',
         //    "$": "jquery",
