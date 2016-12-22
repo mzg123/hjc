@@ -4,7 +4,7 @@
 *{
     margin: 0;padding: 0;
 }
-body,#con{
+body,#con,.con{
     background: #ffffff;
     position: relative;
     height: 99%;
