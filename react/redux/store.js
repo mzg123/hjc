@@ -3,7 +3,7 @@ var redux=require("redux");
 var thunkMiddleware=require("redux-thunk").default;
 var reducer=require("./reducer");
 var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMiddleware=redux.applyMiddleware,
-    counter=reducer.counter,treeCounter=reducer.treeCounter,initState=reducer.initState;
+    counter=reducer.counter,treeCounter=reducer.treeCounter,navCounter=reducer.navCounter,initState=reducer.initState;
 /**
  * 这是一个 reducer，形式为 (state, action) => state 的纯函数。
  * 描述了 action 如何把 state 转变成下一个 state。
@@ -19,7 +19,7 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
 
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({ counter:counter,treeCounter:treeCounter});
+var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter});
 var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 store.initState=initState;

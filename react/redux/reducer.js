@@ -41,6 +41,7 @@ var inits=function initState(){
         ]
         ,options:{
         }
+
     }
 }
 
@@ -60,18 +61,30 @@ module.exports={
 ,treeCounter:function (state , action) {
     state||(state=inits());
 
-    switch (action.type) {
-        case "loadding":
-            state.state=0;
-            return $.extend({},state);
-        case "getdata":
-            state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
-            state.content.currentcontent=state.content[action.param];
-            state.currenttxt=state.content[action.param];
-            return $.extend({},state);
-        default:
+        switch (action.type) {
+            case "loadding":
+                state.state=0;
+                return $.extend({},state);
+            case "getdata":
+                state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
+                state.content.currentcontent=state.content[action.param];
+                state.currenttxt=state.content[action.param];
+                return $.extend({},state);
+            default:
 
-            return  state;
+                return  state;
+            }
     }
-}
+    ,navCounter:function(state,action){
+        state||(state=inits());
+        state=$.extend({},state,{navData:{
+            type:"hor"
+        }});
+        switch(action.type){
+            case "nav":
+                return $.extend({},state);
+            default:
+                return state;
+        }
+    }
 }

@@ -7,7 +7,7 @@ export default class navtest  extends React.Component{
     }
     render(){
         return (
-            <div className="con"> <Link to="/roller">轮播图</Link> <Link to="/home">主页</Link>
+            <div className="con"> <Link to="/roller">轮播图</Link><Link to="/home">主页</Link>
                   <Link to="/m">测试</Link>
             {this.props.children}
             </div>

@@ -17,7 +17,7 @@ var RollerClick=React.createClass({
 
     }
         ,render:function(){
-        var className=this.state.rollerClick+" position_a ";
+        var className=this.props.rollerClick+" position_a ";
         return (
             <div className={className} ></div>
         );
@@ -123,7 +123,6 @@ var roller = React.createClass({
                 ,conWidth:1200//容器宽度
                 ,hasCurrentClass:true//是否添加当前item的当前类用于区别其它item
             }
-
         }
     },
     setOff:function(index,lcount){
