@@ -77,11 +77,66 @@ module.exports={
     }
     ,navCounter:function(state,action){
         state||(state=inits());
-        state=$.extend({},state,{navData:{
+        state.navData || (state=$.extend({},state,{ navData:{
             type:"hor"
-        }});
+            ,currentMenu:""
+            ,data:[
+                {
+                    tag:"首页"
+                    ,href:"/"
+
+                }
+                , {
+                    tag:"财富管理"
+                    ,MenuEc:"leave"
+                    ,child:[
+                        {
+                            tag:"p2p债券"
+                            ,href:"/m"
+                        }
+                        ,{
+                            tag:"p2p债券"
+                            ,href:"/m"
+                        }
+                    ]
+                }
+                , {
+                    tag:"债权转让"
+                    ,MenuEc:"leave"
+                    ,child:[
+                        {
+                            tag:"p2p债券"
+                            ,href:"/m"
+                        }
+                        ,{
+                            tag:"p2p债券"
+                            ,href:"/m"
+                        }
+                    ]
+                }
+                ,{
+                    tag:"银谷课堂"
+                    ,href:"/"
+
+                }
+            ]
+        }}));
         switch(action.type){
-            case "nav":
+            case "enter":
+                state.navData.data.map(function(item,index){
+                    if(item.tag==action.tag){
+                        item.MenuEc="enter";
+                    }
+                })
+                state.navData.currentMenuEc="currentMenuEcenter";
+                return $.extend({},state);
+            case "leave":
+                state.navData.data.map(function(item,index){
+                    if(item.tag==action.tag){
+                        item.MenuEc="leave";
+                    }
+                })
+                state.navData.currentMenuEc="currentMenuEcleave";
                 return $.extend({},state);
             default:
                 return state;

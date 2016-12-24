@@ -12,26 +12,115 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
     constructor(){
         super();
     }
+     getInitialState(){
+         return {
+             navData:{
+                 type:"hor"
+                 ,currentMenu:""
+                 ,data:[
+                     {
+                       tag:"首页"
+                       ,href:"/"
+
+                     }
+                     , {
+                         tag:"财富管理"
+                         ,MenuEc:"leave"
+                         ,child:[
+                             {
+                                 tag:"p2p债券"
+                                 ,href:"/m"
+                             }
+                             ,{
+                                 tag:"p2p债券"
+                                 ,href:"/m"
+                             }
+                         ]
+                     }
+                     , {
+                         tag:"债权转让"
+                         ,MenuEc:"leave"
+                         ,child:[
+                             {
+                                 tag:"p2p债券"
+                                 ,href:"/m"
+                             }
+                             ,{
+                                 tag:"p2p债券"
+                                 ,href:"/m"
+                             }
+                         ]
+                     }
+                     ,{
+                         tag:"银谷课堂"
+                         ,href:"/"
+
+                     }
+                 ]
+             }
+         }
+     }
+     createNav(data,props){
+          var self=this;
+
+         return data.map(function(item,index){
+             let c="position_a menu "+item.MenuEc;
+             if(item.child){
+
+                 return (
+                  <li name={item.tag} props={props} onMouseLeave={self.mouseLeave.bind(self)} onMouseEnter={self.mouseEnter.bind(self)}>
+                         <a>{item.tag}</a>
+                         <ul className={c}>
+                         {self.createNav(item.child,props)}
+                         </ul>
+                     </li>
+                 )
+             }else{
+
+                return(
+                    <li ><Link to={item.href}>{item.tag}</Link></li>
+                )
+
+
+             }
+         })
+     }
+     mouseEnter(evt){
+
+         this.props.changeMenu("enter",$(evt.target).parent().attr("name"));
+     }
+     mouseLeave(evt){
+         this.props.changeMenu("leave",$(evt.target).parent().attr("name"));
+     }
     render(){
+        let navData=this.props.navData;
+        let r=this.createNav(navData.data,this.props.changeMenu);
+
         return (
-            <div onClick={this.props.onItemClick}>33333</div>
+            <div className="con">
+                    <div id="nav" className="nav">
+                        <ul >
+                         { r }
+                        </ul>
+                    </div>
+                {this.props.children}
+            </div>
         )
     }
 }
 
 const mapStateToProps =function (state) {
-    console.log(state,111);
-    return {
-        navType:state.navCounter
 
+    return {
+      navData:state.navCounter.navData,
+       currentMenuEc:state.navCounter.navData.currentMenuEc
     }
 }
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-        onItemClick: function(id){
-            //dispatch(actions.getAjaxLog(id));
-            alert(3);
+        changeMenu: function(ty,tag){
+             dispatch({type:ty,tag:tag});
         }
     }
 }

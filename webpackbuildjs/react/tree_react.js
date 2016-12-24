@@ -19,7 +19,7 @@ reduxStore.initState();
 
 //ReactDOM.render(
 //    <Router history={browserHistory}>
-//        <Route path="/"  component={navtest}/>
+//        <Route path="/"  component={nav}/>
 //    </Router>
 //    , document.getElementById("nav"));
 
@@ -28,10 +28,10 @@ ReactDOM.render(
     <Provider store={reduxStore}>
         <Router history={browserHistory}>
 
-            <Route path="/"  component={navtest}>
+            <Route path="/"  component={nav}>
                 <Route path="roller"   component={Roller} />
                 <Route path="m"  onLeave={d} component={Test}/>
-                <IndexRoute component={nav}/>
+                <IndexRoute component={Test}/>
                 <Route path="home"  onLeave={d} onEnter={d} component={Tree} />
             </Route>
         </Router>
