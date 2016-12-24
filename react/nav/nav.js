@@ -62,16 +62,20 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
      }
      createNav(data,props){
           var self=this;
-
+         //{self.createNav(item.child,props)}
          return data.map(function(item,index){
              let c="position_a menu "+item.MenuEc;
              if(item.child){
 
                  return (
-                  <li name={item.tag} props={props} onMouseLeave={self.mouseLeave.bind(self)} onMouseEnter={self.mouseEnter.bind(self)}>
+                  <li data-name={item.tag} props={props} onMouseLeave={self.mouseLeave.bind(self)} onMouseEnter={self.mouseEnter.bind(self)}>
                          <a>{item.tag}</a>
-                         <ul className={c}>
-                         {self.createNav(item.child,props)}
+                         <ul data-name={item.tag} className={c}>
+                         {
+                             item.child.map(function(itemc,indexc){
+                                 return ( <li  data-name={item.tag}><Link to={itemc.href}>{itemc.tag}</Link></li>);
+                             })
+                             }
                          </ul>
                      </li>
                  )
@@ -87,10 +91,10 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
      }
      mouseEnter(evt){
 
-         this.props.changeMenu("enter",$(evt.target).parent().attr("name"));
+         this.props.changeMenu("enter",$(evt.target).parent().attr("data-name"));
      }
      mouseLeave(evt){
-         this.props.changeMenu("leave",$(evt.target).parent().attr("name"));
+         this.props.changeMenu("leave",$(evt.target).parent().attr("data-name"));
      }
     render(){
         let navData=this.props.navData;
