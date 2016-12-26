@@ -30,8 +30,8 @@ ReactDOM.render(
 
             <Route path="/"  component={nav}>
                 <Route path="roller"   component={Roller} />
-                <Route path="m"  onLeave={d} component={Test}/>
-                <IndexRoute component={Test}/>
+                <Route path="test"  onLeave={d} component={Test}/>
+                <IndexRoute component={Tree}/>
                 <Route path="tree"  onLeave={d} onEnter={d} component={Tree} />
             </Route>
         </Router>

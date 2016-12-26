@@ -95,10 +95,11 @@ var Tree = React.createClass({
 
     },
     componentDidMount() {
-        this.props.router.setRouteLeaveHook(
-            this.props.route,
-            this.routerWillLeave
-        )
+        console.log( this.props.route);
+        //this.props.router.setRouteLeaveHook(
+        //    this.props.route,
+        //    this.routerWillLeave
+        //)
     },
     routerWillLeave(nextLocation) {
         // 返回 false 会继续停留当前页面，

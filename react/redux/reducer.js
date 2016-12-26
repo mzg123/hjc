@@ -106,11 +106,11 @@ module.exports={
                     ,child:[
                         {
                             tag:"p2p债券"
-                            ,href:"/m"
+                            ,href:"/test"
                         }
                         ,{
                             tag:"p2p债券"
-                            ,href:"/m"
+                            ,href:"/test"
                         }
                     ]
                 }
