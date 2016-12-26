@@ -69,7 +69,7 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
 
                  return (
                   <li data-name={item.tag} props={props} onMouseLeave={self.mouseLeave.bind(self)} onMouseEnter={self.mouseEnter.bind(self)}>
-                         <a>{item.tag}</a>
+                         <Link to={item.href}>{item.tag}</Link>
                          <ul data-name={item.tag} className={c}>
                          {
                              item.child.map(function(itemc,indexc){

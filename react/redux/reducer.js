@@ -87,16 +87,16 @@ module.exports={
 
                 }
                 , {
-                    tag:"财富管理"
+                    tag:"组件管理"
                     ,MenuEc:"leave"
                     ,child:[
                         {
-                            tag:"p2p债券"
-                            ,href:"/m"
+                            tag:"lefttree"
+                            ,href:"/tree"
                         }
                         ,{
-                            tag:"p2p债券"
-                            ,href:"/m"
+                            tag:"轮播"
+                            ,href:"/roller"
                         }
                     ]
                 }

@@ -32,7 +32,7 @@ ReactDOM.render(
                 <Route path="roller"   component={Roller} />
                 <Route path="m"  onLeave={d} component={Test}/>
                 <IndexRoute component={Test}/>
-                <Route path="home"  onLeave={d} onEnter={d} component={Tree} />
+                <Route path="tree"  onLeave={d} onEnter={d} component={Tree} />
             </Route>
         </Router>
     </Provider>

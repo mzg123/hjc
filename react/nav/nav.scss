@@ -3,10 +3,16 @@
   margin: 5px;
   position: relative;
 }
-.nav ul{
+
+.nav>ul{
   height: 30px;
-  text-align: center;
   z-index: 9;
+  text-align: center;
+
+}
+.nav >ul> li>ul{
+  text-align: left;
+  background-color: #ffffff;
 }
 .nav .enter{
  visibility: visible;
