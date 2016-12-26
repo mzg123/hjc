@@ -7,6 +7,7 @@ var reduxStore=require('../../react/redux/store.js');
 var Tree=require("../../react/tree_react/tree.js");
 var Roller=require("../../react/roller/roller.js");
 var Test=require("../../react/tree_react/Test.js");
+var Tabs=require("../../react/tabs/tab.js");
 import navtest from "../../react/nav/navtest.js";
 import nav from "../../react/nav/nav.js";
 
@@ -29,9 +30,11 @@ ReactDOM.render(
         <Router history={browserHistory}>
 
             <Route path="/"  component={nav}>
+                <IndexRoute component={Tree}/>
                 <Route path="roller"   component={Roller} />
                 <Route path="test"  onLeave={d} component={Test}/>
-                <IndexRoute component={Tree}/>
+                <Route path="tabs"  click={d} onLeave={d} component={Tabs}/>
+
                 <Route path="tree"  onLeave={d} onEnter={d} component={Tree} />
             </Route>
         </Router>

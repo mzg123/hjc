@@ -98,6 +98,10 @@ module.exports={
                             tag:"轮播"
                             ,href:"/roller"
                         }
+                        ,{
+                            tag:"tabs"
+                            ,href:"/tabs"
+                        }
                     ]
                 }
                 , {
@@ -137,6 +141,38 @@ module.exports={
                     }
                 })
                 state.navData.currentMenuEc="currentMenuEcleave";
+                return $.extend({},state);
+            default:
+                return state;
+        }
+    }
+    ,tabCounter:function(state,action){
+
+        state||(state=inits());
+        state.tabData || (state=$.extend({},state,{ tabData:{
+            currentTabIndex:1
+            ,data:[
+                {
+                    tag:"已充值"
+                    ,href:"/"
+                    ,tabIndex:1
+                }
+                ,{
+                    tag:"已充值"
+                    ,href:"/"
+                    ,tabIndex:2
+                }
+                ,{
+                    tag:"已充值"
+                    ,href:"/"
+                    ,tabIndex:3
+                }
+            ]
+        }}));
+
+        switch(action.type){
+            case "tabclick":
+                state.tabData.currentTabIndex=type.tabIndex;
                 return $.extend({},state);
             default:
                 return state;
