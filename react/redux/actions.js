@@ -33,4 +33,10 @@ module.exports={
             });
         }
     }
+    ,tabClick:function(option){
+        return function(dispatch){
+            //处理其它逻辑
+            dispatch({type:"tabclick",tabIndex:option});
+        }
+    }
 }

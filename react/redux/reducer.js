@@ -155,6 +155,11 @@ module.exports={
                 {
                     tag:"已充值"
                     ,href:"/"
+                    ,tabIndex:0
+                }
+                ,{
+                    tag:"已充值"
+                    ,href:"/"
                     ,tabIndex:1
                 }
                 ,{
@@ -162,17 +167,12 @@ module.exports={
                     ,href:"/"
                     ,tabIndex:2
                 }
-                ,{
-                    tag:"已充值"
-                    ,href:"/"
-                    ,tabIndex:3
-                }
             ]
         }}));
 
         switch(action.type){
             case "tabclick":
-                state.tabData.currentTabIndex=type.tabIndex;
+                state.tabData.currentTabIndex=action.tabIndex;
                 return $.extend({},state);
             default:
                 return state;

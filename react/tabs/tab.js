@@ -18,14 +18,13 @@ var Tabs = React.createClass({
     },
 
     render: function () {
-        console.log(this.props);
-        var d=this.props.tabData,currentTabIndex=this.props.currentTabIndex;
+        var d=this.props.tabData,currentTabIndex=this.props.currentTabIndex,onItemClick=this.props.onItemClick;
         var tabs=d.data.map(function(item,index){
-            if(index==1){
-                return (<div  className="tab current">{item.tag}</div>)
+            if(index==currentTabIndex){
+                return (<div onClick={onItemClick.bind(this,item.tabIndex)} className="tab current">{item.tag}</div>)
             }
             else{
-                return <div className="tab">{item.tag}</div>
+                return <div onClick={onItemClick.bind(this,item.tabIndex)}  className="tab">{item.tag}</div>
             }
         })
 
@@ -42,17 +41,17 @@ var Tabs = React.createClass({
 
 
 const mapStateToProps =function (state) {
-
     return {
         tabData:state.tabCounter.tabData
-        ,currentTabIndex:state.tabCounter.currentTabIndex
+        ,currentTabIndex:state.tabCounter.tabData.currentTabIndex
     }
 }
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(id){
-            dispatch(actions.getAjaxLog(id));
+
+            dispatch(actions.tabClick(id));
         }
     }
 }
