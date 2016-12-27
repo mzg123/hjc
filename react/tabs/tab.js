@@ -39,7 +39,6 @@ var Tabs = React.createClass({
 });
 
 
-
 const mapStateToProps =function (state) {
     return {
         tabData:state.tabCounter.tabData
@@ -50,14 +49,31 @@ const mapStateToProps =function (state) {
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(id){
-
             dispatch(actions.tabClick(id));
         }
     }
 }
-
+function initTabs(props){
+    return connect(
+        function (state) {
+            return props;
+            //return {
+            //    tabData:state.tabCounter.tabData
+            //    ,currentTabIndex:state.tabCounter.tabData.currentTabIndex
+            //}
+        },
+        function(dispatch ,ownProps) {
+            return {
+                onItemClick: function(id){
+                    dispatch(actions.tabClick(id));
+                }
+            }
+        }
+    )(Tabs);
+}
 var Tabs=connect(
     mapStateToProps,
     mapDispatchToProps
 )(Tabs);
 module.exports =Tabs;
+

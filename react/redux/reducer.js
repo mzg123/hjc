@@ -77,7 +77,7 @@ module.exports={
     }
     ,navCounter:function(state,action){
         state||(state=inits());
-        state.navData || (state=$.extend({},state,{ navData:{
+        state.navData || (state=$.extend({},state,{modal_1_state:0,modal_2_state:0, navData:{
             type:"hor"
             ,currentMenu:""
             ,data:[
@@ -101,6 +101,10 @@ module.exports={
                         ,{
                             tag:"tabs"
                             ,href:"/tabs"
+                        }
+                        ,{
+                            tag:"modals"
+                            ,href:"/modals"
                         }
                     ]
                 }
@@ -142,12 +146,23 @@ module.exports={
                 })
                 state.navData.currentMenuEc="currentMenuEcleave";
                 return $.extend({},state);
+            case "showM1":
+                state.modal_1_state=1;
+                return $.extend({},state);
+            case "showM2":
+                state.modal_2_state=1;
+                return $.extend({},state);
+            case "hiddenM2":
+                state.modal_2_state=0;
+                return $.extend({},state);
+            case "hiddenM1":
+                state.modal_1_state=0;
+                return $.extend({},state);
             default:
                 return state;
         }
     }
     ,tabCounter:function(state,action){
-
         state||(state=inits());
         state.tabData || (state=$.extend({},state,{ tabData:{
             currentTabIndex:1
@@ -163,9 +178,14 @@ module.exports={
                     ,tabIndex:1
                 }
                 ,{
-                    tag:"已充值"
+                    tag:"充值失败"
                     ,href:"/"
                     ,tabIndex:2
+                }
+                ,{
+                    tag:"未处理"
+                    ,href:"/"
+                    ,tabIndex:3
                 }
             ]
         }}));

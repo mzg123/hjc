@@ -118,16 +118,13 @@ table {
 
 
 /* css common */
-.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
-.clearfix { *zoom:1; }
-
-
-.redborder{
-	border:red solid 1px;
-}
 html,body{
 	height: 100%;
 }
+.redborder{
+	border:red solid 1px;
+}
+
 .none,.mpage>.col-md-2{
 	/*display: none;*/
 }
@@ -152,6 +149,8 @@ html,body{
 	height: 60px;/*脚部的高度*/
 	clear:both;
 }
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
 
 /*浮动 start*/
 .float_l{

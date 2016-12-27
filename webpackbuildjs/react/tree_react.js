@@ -8,6 +8,8 @@ var Tree=require("../../react/tree_react/tree.js");
 var Roller=require("../../react/roller/roller.js");
 var Test=require("../../react/tree_react/Test.js");
 var Tabs=require("../../react/tabs/tab.js");
+var Modal=require("../../react/modal/modal.js");
+var ModalTest=require("../../react/modal/modalTest.js");
 import navtest from "../../react/nav/navtest.js";
 import nav from "../../react/nav/nav.js";
 
@@ -29,15 +31,20 @@ ReactDOM.render(
     <Provider store={reduxStore}>
         <Router history={browserHistory}>
 
-            <Route path="/"  component={nav}>
+            <Route path="/"  component={nav }>
                 <IndexRoute component={Tree}/>
                 <Route path="roller"   component={Roller} />
                 <Route path="test"  onLeave={d} component={Test}/>
                 <Route path="tabs"  click={d} onLeave={d} component={Tabs}/>
+                <Route path="modal"  click={d} onLeave={d} component={Modal}/>
+                <Route path="modals"  click={d} onLeave={d} component={ModalTest}/>
 
                 <Route path="tree"  onLeave={d} onEnter={d} component={Tree} />
             </Route>
+            <Route path="*" component={Modal}/>
+
         </Router>
+
     </Provider>
     , document.getElementById("con"));
 

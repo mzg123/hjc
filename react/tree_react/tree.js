@@ -115,7 +115,7 @@ var Tree = React.createClass({
         return (
             <div  id="treeCon">
 
-                <div  id="tree"> <Link to="/m">333</Link>
+                <div  id="tree">
                     <div className="tree position_r" >
                         <ul className="items position_r">
                     {treehtml}

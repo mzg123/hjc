@@ -168,3 +168,101 @@ body {
   margin:0px auto;
   width:100%;
 }
+
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+/*浮动 start*/
+.float_l{
+  float: left;
+}
+.float_r{
+  float: right;
+}
+.clear_b{
+  clear: both;
+}
+
+/*浮动 end*/
+/*居左右中 start*/
+.align_c{
+  text-align: center;
+}
+.align_l{
+  text-align: left;
+}
+.align_r{
+  text-align: right;
+}
+.margin_lr_c{
+  margin: 0 auto;
+}
+.margin_tb_c{
+  margin: auto 0;
+}
+.margin_c{
+  margin: auto;
+}
+/*居左右中 end*/
+/*长度和宽度 start*/
+.width_100_p{
+  width:100%;
+}
+.height_100_p{
+  height:100%;
+}
+.all_100_p{
+  width:100%;
+  height:100%;
+}
+/*长度和宽度 end*/
+
+/*位置 start*/
+.position_r{
+  position: relative;
+}
+.position_f{
+  position: fixed;
+}
+.position_a{
+  position: absolute;
+}
+/*位置 end*/
+
+/*display start*/
+.display_ilb{
+  display: inline-block;
+}
+.display_n{
+  display:none;
+}
+/*display end*/
+/*圆角 start*/
+.border_radius_5{
+  border-radius:5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius:5px;
+}
+/*圆角 end*/
+
+
+/*字体 start*/
+.font_20{
+  font-size: 20px;
+}
+/*字体 end*/
+
+
+/*a 标签 start*/
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color:#6fabf4;
+}
+
+.hidden{
+  /*display: none;*/
+  visibility: hidden;
+}
