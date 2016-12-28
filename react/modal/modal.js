@@ -164,8 +164,25 @@ function IsIE8(){
 var Modal=React.createClass({
 
     sureClick:function(){
-        this.props.option.sureClick(this.props.option.sureClickParam);
-        this.props.option.close();
+        switch (this.props.option.sureClose){
+             case 1://先关闭
+                 this.props.option.close();
+                 this.props.option.sureClick(this.props.option.sureClickParam);
+                break;
+            case 0://不关闭
+                this.props.option.sureClick(this.props.option.sureClickParam);
+                break;
+            case 2://后关闭
+                this.props.option.sureClick(this.props.option.sureClickParam);
+                this.props.option.close();
+                break;
+            default :
+                this.props.option.sureClick(this.props.option.sureClickParam);
+                this.props.option.close();
+                break;
+        }
+
+
     }
     ,render:function(){
         var id=this.props.option.id;

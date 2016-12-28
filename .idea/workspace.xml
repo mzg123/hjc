@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/redux/assist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/modal/modal.js" afterPath="$PROJECT_DIR$/react/modal/modal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/nav/nav.js" afterPath="$PROJECT_DIR$/react/nav/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/redux/reducer.js" afterPath="$PROJECT_DIR$/react/redux/reducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hjc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +43,9 @@
       <file leaf-file-name="modalTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/modal/modalTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="931">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-              <folding>
-                <marker date="1482832971120" expanded="true" signature="395:569" placeholder="&lt;xml/&gt;" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="931">
+              <caret line="14" column="57" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +63,8 @@
       <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/modal/modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1064">
-              <caret line="182" column="62" selection-start-line="182" selection-start-column="62" selection-end-line="182" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="1387">
+              <caret line="166" column="33" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
               <folding>
                 <element signature="e#220#4729#0" expanded="false" />
                 <element signature="n#!!block;n#IsIE8#0" expanded="false" />
@@ -127,12 +119,12 @@
       <file leaf-file-name="nav.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react/nav/nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42222223" vertical-offset="950" max-vertical-offset="2280">
-              <caret line="108" column="92" selection-start-line="108" selection-start-column="92" selection-end-line="108" selection-end-column="92" />
+            <state vertical-scroll-proportion="0.5777778" vertical-offset="1700" max-vertical-offset="2375">
+              <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
               <folding>
                 <element signature="e#633#1963#0" expanded="false" />
-                <marker date="1482892235799" expanded="true" signature="3640:3649" placeholder="..." />
-                <marker date="1482892235799" expanded="true" signature="3937:3947" placeholder="..." />
+                <marker date="1482893395335" expanded="true" signature="3692:3701" placeholder="..." />
+                <marker date="1482893395335" expanded="true" signature="3922:3932" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -584,12 +576,12 @@
       <workItem from="1482368034303" duration="26753000" />
       <workItem from="1482563101382" duration="34792000" />
       <workItem from="1482830931639" duration="2323000" />
-      <workItem from="1482886802271" duration="5463000" />
+      <workItem from="1482886802271" duration="6574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89070000" />
+    <option name="totallyTimeSpent" value="90181000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -612,8 +604,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1692" height="1026" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,7 +618,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21340781" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21340781" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21691176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -985,16 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/modal/modalTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <marker date="1482832971120" expanded="true" signature="395:569" placeholder="&lt;xml/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8923077" vertical-offset="389" max-vertical-offset="1102">
@@ -1045,10 +1027,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/react/modal/modalTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="931">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/react/modal/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1064">
-          <caret line="182" column="62" selection-start-line="182" selection-start-column="62" selection-end-line="182" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="1387">
+          <caret line="166" column="33" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
           <folding>
             <element signature="e#220#4729#0" expanded="false" />
             <element signature="n#!!block;n#IsIE8#0" expanded="false" />
@@ -1058,12 +1048,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react/nav/nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42222223" vertical-offset="950" max-vertical-offset="2280">
-          <caret line="108" column="92" selection-start-line="108" selection-start-column="92" selection-end-line="108" selection-end-column="92" />
+        <state vertical-scroll-proportion="0.5777778" vertical-offset="1700" max-vertical-offset="2375">
+          <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
           <folding>
             <element signature="e#633#1963#0" expanded="false" />
-            <marker date="1482892235799" expanded="true" signature="3640:3649" placeholder="..." />
-            <marker date="1482892235799" expanded="true" signature="3937:3947" placeholder="..." />
+            <marker date="1482893395335" expanded="true" signature="3692:3701" placeholder="..." />
+            <marker date="1482893395335" expanded="true" signature="3922:3932" placeholder="..." />
           </folding>
         </state>
       </provider>

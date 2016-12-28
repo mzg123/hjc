@@ -103,11 +103,12 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
     render(){
         let navData=this.props.navData;
         let r=this.createNav(navData.data,this.props.changeMenu);
+        var sureClick=this.props.alertSureMap[assist.getSureClickByPath(this.props.location.pathname)];
         var modal1={modalState:this.props.modal_1_state,close:this.props.close1,id:"modal1",width:200,height:100,
-            sureClick:this.props.alertSureMap[assist.getSureClickByPath(this.props.location.pathname)],
+            sureClick:this.props.show2,sureClose:0,
             sureClickParam:{a:3},content:"<div style='color:red'>444444444</div>"}
         var modal2={modalState:this.props.modal_2_state,close:this.props.close2,id:"modal2",width:200,height:100,
-        sureClick:this.props.alertSureMap[assist.getSureClickByPath(this.props.location.pathname)],
+            sureClick:sureClick,
             sureClickParam:{a:3},content:"<div style='color:blue'>444444444</div>"}
 
         return (
@@ -147,6 +148,10 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
         }
         ,close2:function(){
             dispatch({type:"hiddenM2"});
+        }
+        ,show2:function(){
+
+            dispatch({type:"showM2"});
         }
     }
 }
