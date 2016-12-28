@@ -39,10 +39,10 @@ var TabComtent = React.createClass({
                 <div className="tabs">
                     {tabs}
                 </div>
-                <Table isShow={currentTabIndex==0&&true}  option={11111111111}></Table>
-                <Table  isShow={currentTabIndex==1&&true} option={22222222222}></Table>
-                <Table  isShow={currentTabIndex==3&&true} option={33333333333}></Table>
-                <Table  isShow={currentTabIndex==4&&true} option={44444444444}></Table>
+                <Table isShow={currentTabIndex==0&&true}  option={this.props.tabContentOptons}></Table>
+                <Table  isShow={currentTabIndex==1&&true} option={this.props.tabContentOptons}></Table>
+                <Table  isShow={currentTabIndex==3&&true} option={this.props.tabContentOptons}></Table>
+                <Table  isShow={currentTabIndex==4&&true} option={this.props.tabContentOptons}></Table>
             </div>
 
 
@@ -56,6 +56,7 @@ const mapStateToProps =function (state) {
     return {
         tabData:state.tabCounter.tabData
         ,currentTabIndex:state.tabCounter.tabData.currentTabIndex
+        ,tabContentOptons:state.tabCounter.tabContentOptons
     }
 }
 
