@@ -3,22 +3,23 @@ var reactRedux = require('react-redux')
 require("./tab.scss");
 var Redux=require("redux");
 var actions=require("../redux/actions.js");
+var Table=require("../table/table.js");
 var reactRouter=require('react-router');
 
 var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Link;
 
 
-var Tabs = React.createClass({
+var TabComtent = React.createClass({
 
     componentDidMount() {
         //this.props.router.setRouteLeaveHook(
         //    this.props.route,
         //    this.routerWillLeave
         //)
-    },
-    click:function(id){
-       this.props.onItemClick(id);
-       //this.props.outerClick(id);
+    }
+    ,click:function(id){
+        this.props.onItemClick(id);
+        //this.props.outerClick(id);
     }
     ,render: function () {
 
@@ -38,6 +39,10 @@ var Tabs = React.createClass({
                 <div className="tabs">
                     {tabs}
                 </div>
+                <Table isShow={currentTabIndex==0&&true}  option={11111111111}></Table>
+                <Table  isShow={currentTabIndex==1&&true} option={22222222222}></Table>
+                <Table  isShow={currentTabIndex==3&&true} option={33333333333}></Table>
+                <Table  isShow={currentTabIndex==4&&true} option={44444444444}></Table>
             </div>
 
 
@@ -62,27 +67,10 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
 
     }
 }
-function initTabs(props){
-    return connect(
-        function (state) {
-            return props;
-            //return {
-            //    tabData:state.tabCounter.tabData
-            //    ,currentTabIndex:state.tabCounter.tabData.currentTabIndex
-            //}
-        },
-        function(dispatch ,ownProps) {
-            return {
-                onItemClick: function(id){
-                    dispatch(actions.tabClick(id));
-                }
-            }
-        }
-    )(Tabs);
-}
-var Tabs=connect(
+
+var TabComtent=connect(
     mapStateToProps,
     mapDispatchToProps
-)(Tabs);
-module.exports =Tabs;
+)(TabComtent);
+module.exports =TabComtent;
 

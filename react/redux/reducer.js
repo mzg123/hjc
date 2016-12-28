@@ -44,18 +44,20 @@ var inits=function initState(){
 
     }
 }
-var getModalOption=function(){
-    return {
-                modalState:this.props.modal_1_state
-               ,close:this.props.close1
-               ,id:"modal1"
-               ,width:200
-               ,height:100
-               ,sureClick:this.props.show2
-               ,sureClose:0,
-                sureClickParam:{a:3},
-                content:"<div style='color:red'>444444444</div>"
-            }
+function deepCopy(p, c) {
+    var c = c || {};
+    for (var i in p) {
+        if(! p.hasOwnProperty(i)){
+            continue;
+        }
+        if (typeof p[i] === 'object') {
+            c[i] = (p[i].constructor === Array) ? [] : {};
+            deepCopy(p[i], c[i]);
+        } else {
+            c[i] = p[i];
+        }
+    }
+    return c;
 }
 module.exports={
     initState:inits
@@ -76,12 +78,14 @@ module.exports={
         switch (action.type) {
             case "loadding":
                 state.state=0;
-                return $.extend({},state);
+                return deepCopy(state);
+                //return $.extend({},state);
             case "getdata":
                 state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
                 state.content.currentcontent=state.content[action.param];
                 state.currenttxt=state.content[action.param];
-                return $.extend({},state);
+                return deepCopy(state);
+                //return $.extend({},state);
             default:
 
                 return  state;
@@ -152,7 +156,8 @@ module.exports={
                     }
                 })
                 state.navData.currentMenuEc="currentMenuEcenter";
-                return $.extend({},state);
+                return deepCopy(state);
+                //return $.extend({},state);
             case "leave":
                 state.navData.data.map(function(item,index){
                     if(item.tag==action.tag){
@@ -160,21 +165,28 @@ module.exports={
                     }
                 })
                 state.navData.currentMenuEc="currentMenuEcleave";
-                return $.extend({},state);
+                return deepCopy(state);
+                //return $.extend({},state);
+
             case "showM1":
                 state.navData.modal_1_option=action.option;
                 state.navData.modal_1_option.modalState=1;
-                return $.extend({},state,true);
+                return deepCopy(state);
+                //return $.extend({},state,true);
             case "showM2":
                 state.navData.modal_2_option=action.option;
                 state.navData.modal_2_option.modalState=1;
-                return $.extend({},state,true);
+                return deepCopy(state);
+                //return $.extend({},state,true);
             case "hiddenM2":
                 state.navData.modal_2_option.modalState=0;
-                return $.extend({},state,true);
+                return deepCopy(state);
+                //return $.extend({},state,true);
+
             case "hiddenM1":
                 state.navData.modal_1_option.modalState=0;
-                return $.extend({},state,true);
+                return deepCopy(state);
+                //return $.extend({},state,true);
             default:
                 return state;
         }
@@ -210,7 +222,8 @@ module.exports={
         switch(action.type){
             case "tabclick":
                 state.tabData.currentTabIndex=action.tabIndex;
-                return $.extend({},state);
+                return deepCopy(state);
+                //return $.extend({},state);
             default:
                 return state;
         }
