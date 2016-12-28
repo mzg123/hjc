@@ -163,24 +163,35 @@ function IsIE8(){
 
 var Modal=React.createClass({
 
-    render:function(){
+    sureClick:function(){
+        this.props.option.sureClick(this.props.option.sureClickParam);
+        this.props.option.close();
+    }
+    ,render:function(){
         var id=this.props.option.id;
          var c=this.props.option.modalState==1?"":"display_n";
-        var close=this.props.option.close;
-        c=c+" modal_con position_f "
+        var close=this.props.option.close,sure=this.sureClick,
+            style={
+                width:this.props.option.width+"px"
+                ,height:this.props.option.height+"px"
+                ,marginLeft:-this.props.option.width/2+"px"
+            }
+        c=c+" modal_con position_f ";
+
         return (
             <div id={id} className={c} >
-                <div className="modal position_f" style={{width: '200px', height: '150px', marginLeft: '-100px'}}>
+                <div className="modal position_f" style={style}>
                     <div className="modal_header position_r">
                         <span className="title">我的标题</span>
                         <span onClick={close} className="close position_a btn">关闭</span>
                     </div>
                     <div className="modal_body align_c position_r">
-                        qwertyuiodfghjk
+                        <div   dangerouslySetInnerHTML={{__html: this.props.option.content}} />
+
                     </div>
                     <div className="modal_footer position_a align_c">
-                        <span className="modal_btn btn_sure btn">确定</span>
-                        <span className="modal_btn btn_sure btn">取消</span>
+                        <span  onClick={sure.bind(this)}  className="modal_btn btn_sure btn">确定</span>
+                        <span onClick={close} className="modal_btn btn_sure btn">取消</span>
                     </div>
                 </div>
             </div>

@@ -77,7 +77,13 @@ module.exports={
     }
     ,navCounter:function(state,action){
         state||(state=inits());
-        state.navData || (state=$.extend({},state,{modal_1_state:0,modal_2_state:0, navData:{
+        state.navData || (state=$.extend({},state,{modal_1_state:0,modal_2_state:0
+            ,alertSureMap:{
+                modalsSure:function(option){
+
+                }
+            }
+            , navData:{
             type:"hor"
             ,currentMenu:""
             ,data:[
