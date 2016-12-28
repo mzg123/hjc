@@ -18,6 +18,15 @@ var Tabs = React.createClass({
     },
 
     render: function () {
+        var modal1={close:this.props.close1,id:"modal1",width:200,height:100,
+            sureClick:this.props.show2,sureClose:0,
+            sureClickParam:modal2,content:"<div style='color:red'>1212</div>"}
+        var modal2={close:this.props.close2,id:"modal2",width:400,height:500,
+            sureClick:this.props.close2,
+            sureClickParam:{a:3},content:"<div style='color:blue'>3212</div>"}
+        modal1.sureClickParam=modal2
+        var click=this.props.modalClick
+
         var d=this.props.tabData,currentTabIndex=this.props.currentTabIndex,onItemClick=this.props.onItemClick;
         var tabs=d.data.map(function(item,index){
             if(index==currentTabIndex){
@@ -31,6 +40,8 @@ var Tabs = React.createClass({
         return (
             <div    className="tabs">
             {tabs}
+                <button onClick={click.bind(this,"showM1",modal1)}>modal1</button>
+                <button  onClick={click.bind(this,"showM2",modal2)}>modal2</button>
             </div>
 
 
@@ -50,6 +61,18 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(id){
             dispatch(actions.tabClick(id));
+        }
+        ,modalClick:function(type,option){
+            dispatch({type:type,option:option});
+        }
+        ,close1:function(){
+            dispatch({type:"hiddenM1"});
+        }
+        ,close2:function(){
+            dispatch({type:"hiddenM2"});
+        }
+        ,show2:function(option){
+           alert(option);
         }
     }
 }

@@ -103,14 +103,8 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
     render(){
         let navData=this.props.navData;
         let r=this.createNav(navData.data,this.props.changeMenu);
-        var sureClick=this.props.alertSureMap[assist.getSureClickByPath(this.props.location.pathname)];
-        var modal1={modalState:this.props.modal_1_state,close:this.props.close1,id:"modal1",width:200,height:100,
-            sureClick:this.props.show2,sureClose:0,
-            sureClickParam:{a:3},content:"<div style='color:red'>444444444</div>"}
-        var modal2={modalState:this.props.modal_2_state,close:this.props.close2,id:"modal2",width:200,height:100,
-            sureClick:sureClick,
-            sureClickParam:{a:3},content:"<div style='color:blue'>444444444</div>"}
-
+       var modal1=this.props.modal1;
+       var modal2=this.props.modal2;
         return (
             <div className="con">
                     <div id="nav" className="nav">
@@ -127,13 +121,13 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
 }
 
 const mapStateToProps =function (state) {
-
     return {
       navData:state.navCounter.navData,
        currentMenuEc:state.navCounter.navData.currentMenuEc
-        ,modal_1_state:state.navCounter.modal_1_state
-        ,modal_2_state:state.navCounter.modal_2_state
-      ,alertSureMap:state.navCounter.alertSureMap
+        ,modal1:state.navCounter.navData.modal_1_option
+        ,modalState1:state.navCounter.navData.modal_1_option.modalState
+        ,modalState2:state.navCounter.navData.modal_2_option.modalState
+        ,modal2:state.navCounter.navData.modal_2_option
     }
 }
 
@@ -143,16 +137,7 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
              dispatch({type:ty,tag:tag});
         }
 
-        ,close1:function(){
-            dispatch({type:"hiddenM1"});
-        }
-        ,close2:function(){
-            dispatch({type:"hiddenM2"});
-        }
-        ,show2:function(){
 
-            dispatch({type:"showM2"});
-        }
     }
 }
 

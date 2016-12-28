@@ -185,6 +185,7 @@ var Modal=React.createClass({
 
     }
     ,render:function(){
+
         var id=this.props.option.id;
          var c=this.props.option.modalState==1?"":"display_n";
         var close=this.props.option.close,sure=this.sureClick,

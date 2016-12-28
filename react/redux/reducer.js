@@ -44,7 +44,19 @@ var inits=function initState(){
 
     }
 }
-
+var getModalOption=function(){
+    return {
+                modalState:this.props.modal_1_state
+               ,close:this.props.close1
+               ,id:"modal1"
+               ,width:200
+               ,height:100
+               ,sureClick:this.props.show2
+               ,sureClose:0,
+                sureClickParam:{a:3},
+                content:"<div style='color:red'>444444444</div>"
+            }
+}
 module.exports={
     initState:inits
     ,counter:function (state,action) {
@@ -77,15 +89,12 @@ module.exports={
     }
     ,navCounter:function(state,action){
         state||(state=inits());
-        state.navData || (state=$.extend({},state,{modal_1_state:0,modal_2_state:0
-            ,alertSureMap:{
-                modalsSure:function(option){
-
-                }
-            }
-            , navData:{
+        state.navData || (state=$.extend({},state,{
+             navData:{
             type:"hor"
             ,currentMenu:""
+                 ,modal_1_option:{id:"modal1",modalState:0}
+                 ,modal_2_option:{id:"modal2",modalState:0}
             ,data:[
                 {
                     tag:"首页"
@@ -153,17 +162,19 @@ module.exports={
                 state.navData.currentMenuEc="currentMenuEcleave";
                 return $.extend({},state);
             case "showM1":
-                state.modal_1_state=1;
-                return $.extend({},state);
+                state.navData.modal_1_option=action.option;
+                state.navData.modal_1_option.modalState=1;
+                return $.extend({},state,true);
             case "showM2":
-                state.modal_2_state=1;
-                return $.extend({},state);
+                state.navData.modal_2_option=action.option;
+                state.navData.modal_2_option.modalState=1;
+                return $.extend({},state,true);
             case "hiddenM2":
-                state.modal_2_state=0;
-                return $.extend({},state);
+                state.navData.modal_2_option.modalState=0;
+                return $.extend({},state,true);
             case "hiddenM1":
-                state.modal_1_state=0;
-                return $.extend({},state);
+                state.navData.modal_1_option.modalState=0;
+                return $.extend({},state,true);
             default:
                 return state;
         }
