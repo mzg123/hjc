@@ -125,6 +125,10 @@ module.exports={
                             tag:"modals"
                             ,href:"/modals"
                         }
+                         ,{
+                             tag:"tabcomtent"
+                             ,href:"/tabcomtent"
+                         }
                     ]
                 }
                 , {
@@ -193,7 +197,96 @@ module.exports={
     }
     ,tabCounter:function(state,action){
         state||(state=inits());
-        state.tabData || (state=$.extend({},state,{ tabData:{
+        state.tabData || (state=$.extend({},state,{
+            tabContents:{
+                 tc1:{
+                     header:{
+                         fields:[
+                             {tag:"序号",fieldName:"xh"}
+                             ,{tag:"出借人",fieldName:"cjr"}
+                             ,{tag:"出借金额 （元）",fieldName:"cjje"}
+                             ,{tag:"加入时间",fieldName:"jrsj"}
+                             ,{tag:"状态",fieldName:"zt"}
+                         ]
+                     }
+                     ,body:{
+                         data:[
+                             {xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
+                             ,{xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
+                             ,{xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
+                             ,{xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
+                             ,{xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
+                         ]
+                     }
+                 }
+                , tc2:{
+                    header:{
+                        fields:[
+                            {tag:"序号",fieldName:"xh"}
+                            ,{tag:"出借人",fieldName:"cjr"}
+                            ,{tag:"出借金额 （元）",fieldName:"cjje"}
+                            ,{tag:"加入时间",fieldName:"jrsj"}
+                            ,{tag:"性别",fieldName:"xb"}
+                            ,{tag:"状态",fieldName:"zt"}
+                        ]
+                    }
+                    ,body:{
+                        data:[
+                            {xh:13,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",xb:"男",zt:"成功"}
+                            ,{xh:13,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",xb:"女",zt:"成功"}
+                            ,{xh:13,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",xb:"男",zt:"成功"}
+                            ,{xh:13,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",xb:"女",zt:"成功"}
+                            ,{xh:13,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",xb:"男",zt:"成功"}
+                        ]
+                    }
+                }
+                , tc3:{
+                    header:{
+                        fields:[
+                            {tag:"序号",fieldName:"xh"}
+                            ,{tag:"出借人",fieldName:"cjr"}
+                            ,{tag:"出借金额 （元）",fieldName:"cjje"}
+                            ,{tag:"加入时间",fieldName:"jrsj"}
+                            ,{tag:"状态",fieldName:"zt"}
+                            ,{tag:"状态",fieldName:"zt1"}
+                            ,{tag:"状态",fieldName:"zt2"}
+                        ]
+                    }
+                    ,body:{
+                        data:[
+                            {xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
+                            ,{xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
+                            ,{xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
+                            ,{xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
+                            ,{xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
+                        ]
+                    }
+                }
+                , tc4:{
+                    header:{
+                        fields:[
+                            {tag:"序号",fieldName:"xh"}
+                            ,{tag:"出借人",fieldName:"cjr"}
+                            ,{tag:"出借金额 （元）",fieldName:"cjje"}
+                            ,{tag:"加入时间",fieldName:"jrsj"}
+                            ,{tag:"状态",fieldName:"zt"}
+                            ,{tag:"状态",fieldName:"zt1"}
+                            ,{tag:"状态",fieldName:"zt2"}
+                            ,{tag:"状态",fieldName:"zt3"}
+                        ]
+                    }
+                    ,body:{
+                        data:[
+                            {xh:33,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功",zt3:"成功"}
+                            ,{xh:33,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功",zt3:"成功"}
+                            ,{xh:33,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功",zt3:"成功"}
+                            ,{xh:33,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功",zt3:"成功"}
+                            ,{xh:33,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功",zt3:"成功"}
+                        ]
+                    }
+                }
+            }
+            ,tabData:{
             currentTabIndex:1
             ,data:[
                 {
