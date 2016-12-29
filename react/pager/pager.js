@@ -11,12 +11,13 @@ require("./pager.scss");
 var Pager = React.createClass({
     getInitialState:function(){
       return {
-          currentPage:14
+          currentPage:6
           ,totalPage:15
 
       }
     },
     init:function(option){
+        var pagerItems=[];
           if(option.totalPage==1){
              var c= option.currentPage==1?"current":"";
               return '<div class="'+ c+'">1</div>';
@@ -36,49 +37,62 @@ var Pager = React.createClass({
               var c= option.currentPage==1?"current":"";
               var pre=option.currentPage==1?" pre disable ":" pre ";
               var next=option.currentPage==option.totalPage?" next disable ":" next ";
-              var r=' <div class="'+pre+'">上一页</div>';
+              //var r=' <div class="'+pre+'">上一页</div>';
+              pagerItems.push(<div onClick={this.click.bind(this,option.currentPage-1)} className={pre}>上一页</div>);
               if(option.currentPage<=4){
                   for(var i=1;i<=7;i++){
                       c= option.currentPage==i?"current":"";
                       r=r+'<div class="'+c+'">'+i+'</div>';
+                      pagerItems.push(<div onClick={this.click.bind(this,i)} className={c}>{i}</div>);
                   }
-                  r=r+'<div >...</div>';
+                  pagerItems.push(<div >...</div>);
               }
               else if(option.totalPage-option.currentPage<=5){
                   for(var i=1;i<=8;i++){
                       c=option.totalPage- option.currentPage;
-                      i<=3&&(r=r+'<div>'+i+'</div>');
-                      i==4&&(r=r+'<div >...</div>');
-                      i==5&&(r=r+'<div class="'+(c==5?"current":"")+'">'+(option.totalPage-5)+'</div>');
-                      i==6&&(r=r+'<div class="'+(c==4?"current":"")+'">'+(option.totalPage-4)+'</div>');
-                      i==7&&(r=r+'<div class="'+(c==3?"current":"")+'">'+(option.totalPage-3)+'</div>');
-                      i==8&&(r=r+'<div class="'+(c==2?"current":"")+'">'+(option.totalPage-2)+'</div>');
+                      i<=3&&( pagerItems.push(<div onClick={this.click.bind(this,i)}>{i}</div>));
+                      i==4&&(pagerItems.push(<div >...</div>));
+                      i==5&&(pagerItems.push(<div onClick={this.click.bind(this,option.totalPage-5)} className={c==5?"current":""}>{option.totalPage-5}</div>));
+                      i==6&&(pagerItems.push(<div onClick={this.click.bind(this,option.totalPage-4)} className={c==4?"current":""}>{option.totalPage-4}</div>));
+                      i==7&&(pagerItems.push(<div onClick={this.click.bind(this,option.totalPage-3)} className={c==3?"current":""}>{option.totalPage-3}</div>));
+                      i==8&&(pagerItems.push(<div onClick={this.click.bind(this,option.totalPage-2)} className={c==2?"current":""}>{option.totalPage-2}</div>));
                   }
               }
               else if(option.totalPage-option.currentPage>5&&option.currentPage>4){
                   for(var i=1;i<=7;i++){
                       c=option.totalPage- option.currentPage;
-                      i<=2&&(r=r+'<div >'+i+'</div>');
-                      i==3&&(r=r+'<div >...</div>');
-                      i==4&&(r=r+'<div >'+(option.currentPage-1)+'</div>');
-                      i==5&&(r=r+'<div class="current">'+(option.currentPage)+'</div>');
-                      i==6&&(r=r+'<div >'+(option.currentPage+1)+'</div>');
-                      i==7&&(r=r+'<div >'+(option.currentPage+2)+'</div>');
+                      i<=2&&( pagerItems.push(<div onClick={this.click.bind(this,i)} >{i}</div>));
+                      i==3&&(pagerItems.push(<div >...</div>));
+                      i==4&&(pagerItems.push(<div onClick={this.click.bind(this,option.currentPage-1)}>{option.currentPage-1}</div>));
+                      i==5&&(pagerItems.push(<div onClick={this.click.bind(this,option.currentPage)} className="current">{option.currentPage}</div>));
+                      i==6&&(pagerItems.push(<div onClick={this.click.bind(this,option.currentPage+1)}>{option.currentPage+1}</div>));
+                      i==7&&(pagerItems.push(<div onClick={this.click.bind(this,option.currentPage+2)}>{option.currentPage+2}</div>));
                   }
-                  r=r+'<div >...</div>';
+                  pagerItems.push(<div >...</div>);
               }
 
               c=option.totalPage-option.currentPage;
-
-              return r+'<div class="'+(c==1?"current":"")+'">'+(option.totalPage-1)+'</div><div class="'+(c==0?"current":"")+'">'+option.totalPage+'</div><div class="'+next+'">下一页</div>';
+              pagerItems.push(<div onClick={this.click.bind(this,option.totalPage-1)} className={c==1?"current":""}>{option.totalPage-1}</div>);
+              pagerItems.push(<div onClick={this.click.bind(this,option.totalPage)} className={c==0?"current":""}>{option.totalPage}</div>);
+              pagerItems.push(<div onClick={this.click.bind(this,option.currentPage+1)} className={next}>下一页</div>)
+              return pagerItems;//r+';
           }
     },
+    click:function(currentPage){
+ 
+        var option=this.getInitialState();
+        if(currentPage<1||currentPage>option.totalPage)
+          return;
+        option.currentPage=currentPage;
+        this.setState(option);
+    },
     render: function () {
-        var option=this.getInitialState();//this.props.option;
+        var option=this.state;//this.props.option;
         var r=this.init(option);
         return (
-            <div className="pager" dangerouslySetInnerHTML={{__html: r}} >
 
+            <div className="pager" >
+            {r}
             </div>
         );
     }
