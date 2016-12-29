@@ -11,6 +11,10 @@ $listContentBgColor:#e2e2e4;
 $ipadBodyBg:#eeeeee;//ipad页面背景颜色
 $keyPointColor:#FF0000;
 $baseFont:宋体;
+
+
+
+$disableColor:#F5F5F5;
 @function pxToRem($px){
 	@return $px/$browserDefaultFontSize* 1rem;
 }

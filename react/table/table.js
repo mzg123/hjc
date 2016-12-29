@@ -1,11 +1,12 @@
 var React = require('react');
-var reactRedux = require('react-redux')
 require("./table.scss");
-var Redux=require("redux");
-var actions=require("../redux/actions.js");
-var reactRouter=require('react-router');
-
-var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Link;
+var Pager=require("../pager/pager.js");
+//var reactRedux = require('react-redux')
+//var Redux=require("redux");
+//var actions=require("../redux/actions.js");
+//var reactRouter=require('react-router');
+//
+//var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Link;
 
 
 var Table = React.createClass({
@@ -35,6 +36,7 @@ var Table = React.createClass({
 
     ,render: function () {
         var data=this.props.option;
+        var pager=this.props.option.pager;
         var fields=data.header.fields,data=data.body.data;
         var c="table "+(this.props.isShow?"":" display_n")
         return (
@@ -63,32 +65,32 @@ var Table = React.createClass({
 
                         </tbody>
                     </table>
-
+             <Pager option={pager}></Pager>
             </div>
         );
     }
 });
 
 
-const mapStateToProps =function (state) {
-    return {
-        tabData:state.tabCounter.tabData
-        ,currentTabIndex:state.tabCounter.tabData.currentTabIndex
-    }
-}
-
-const mapDispatchToProps = function(dispatch ,ownProps) {
-    return {
-        onItemClick: function(id){
-            dispatch(actions.tabClick(id));
-        }
-
-    }
-}
-
-//var Tabs=connect(
+//const mapStateToProps =function (state) {
+//    return {
+//        tabData:state.tabCounter.tabData
+//        ,currentTabIndex:state.tabCounter.tabData.currentTabIndex
+//    }
+//}
+//
+//const mapDispatchToProps = function(dispatch ,ownProps) {
+//    return {
+//        onItemClick: function(id){
+//            dispatch(actions.tabClick(id));
+//        }
+//
+//    }
+//}
+//
+//var Table=connect(
 //    mapStateToProps,
 //    mapDispatchToProps
-//)(Tabs);
+//)(Table);
 module.exports =Table;
 

@@ -1,6 +1,7 @@
 @import "../../common/scss/base.scss";
 
 .table table {
+  margin-bottom: 20px;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 14px;
@@ -16,10 +17,4 @@
       text-align: center;
       border: 1px solid #ddd;
     }
-}
-.table table th{
-
-}
-.table table td{
-
 }
