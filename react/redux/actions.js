@@ -40,8 +40,29 @@ module.exports={
     }
     ,loadData:function(option){
         return function (dispatch) {
-            option.page==2&&(tabcontent1=tabcontent2);
-            dispatch({ type: option.type,data:tabcontent1
+
+            tabcontent2.body.data= [
+                {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功1"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功2"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功3"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功4"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功5"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功6"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功7"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功8"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功9"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功10"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功11"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功12"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功13"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功14"}
+                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功15"}
+
+            ].slice(0,option.page);
+            console.log(option);
+            tabcontent2.pager.currentPage=option.page;
+            dispatch({ type: option.type,data:tabcontent2
             });
             //setInterval(function(){
             //    console.log(option);
