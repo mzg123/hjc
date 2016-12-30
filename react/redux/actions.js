@@ -60,7 +60,7 @@ module.exports={
                 , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功15"}
 
             ].slice(0,option.page);
-            console.log(option);
+
             tabcontent2.pager.currentPage=option.page;
             dispatch({ type: option.type,data:tabcontent2
             });
