@@ -342,7 +342,7 @@ module.exports={
                 state.tabContents.tc3=action.data;
                 return deepCopy(state);
             case "loadData4":
-                state.tabContents.tc1=action.data;
+                state.tabContents.tc4=action.data;
                 return deepCopy(state);
             default:
                 return state;
