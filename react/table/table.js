@@ -35,9 +35,9 @@ var Table = React.createClass({
     }
 
     ,render: function () {
-        var data=this.props.option;
-        var pager=this.props.option.pager;
-        var fields=data.header.fields,data=data.body.data;
+        var data=this.props.data;
+        var pager=this.props.data.pager;
+        var fields=data.header.fields?data.header.fields:[],data=data.body.data?data.body.data:[];
         var c="table "+(this.props.isShow?"":" display_n")
         return (
             <div className={c}>
@@ -65,7 +65,7 @@ var Table = React.createClass({
 
                         </tbody>
                     </table>
-             <Pager option={pager}></Pager>
+             <Pager option={pager} loadData={this.props.loadData}></Pager>
             </div>
         );
     }

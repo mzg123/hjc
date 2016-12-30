@@ -11,27 +11,32 @@ require("./pager.scss");
 var Pager = React.createClass({
     getInitialState:function(){
       return {
-          currentPage:6
-          ,totalPage:15
+          currentPage:2
+          ,totalPage:3
 
       }
     },
     init:function(option){
         var pagerItems=[];
-          if(option.totalPage==1){
+        if(option)
+        if(option.totalPage==1){
              var c= option.currentPage==1?"current":"";
-              return '<div class="'+ c+'">1</div>';
+              pagerItems.push(<div  className={c}>1</div>);
+
           }
           else if(option.totalPage<=10&&option.totalPage>=2){
               var c= option.currentPage==1?"current":"";
               var pre=option.currentPage==1?" pre disable ":" pre ";
               var next=option.currentPage==option.totalPage?" next disable ":" next ";
-              var r=' <div class="'+pre+'">上一页</div><div class="'+c+'">1</div>';
+
+              pagerItems.push(<div onClick={this.click.bind(this,option.currentPage-1)} currentPage className={pre}>上一页</div>);
+              pagerItems.push(<div onClick={this.click.bind(this,1)} className={c}>1</div>);
               for(var i=2;i<=option.totalPage;i++){
                   c= option.currentPage==i?"current":"";
-                  r=r+'<div class="'+c+'">'+i+'</div>';
+                  pagerItems.push(<div onClick={this.click.bind(this,i)} className={c}>{i}</div>);
               }
-              return r+'<div class="'+next+'">下一页</div>';
+              pagerItems.push(<div onClick={this.click.bind(this,option.currentPage+1)}  className={next}>下一页</div>);
+
           }
           else{
               var c= option.currentPage==1?"current":"";
@@ -42,7 +47,7 @@ var Pager = React.createClass({
               if(option.currentPage<=4){
                   for(var i=1;i<=7;i++){
                       c= option.currentPage==i?"current":"";
-                      r=r+'<div class="'+c+'">'+i+'</div>';
+                      //r=r+'<div class="'+c+'">'+i+'</div>';
                       pagerItems.push(<div onClick={this.click.bind(this,i)} className={c}>{i}</div>);
                   }
                   pagerItems.push(<div >...</div>);
@@ -75,20 +80,24 @@ var Pager = React.createClass({
               pagerItems.push(<div onClick={this.click.bind(this,option.totalPage-1)} className={c==1?"current":""}>{option.totalPage-1}</div>);
               pagerItems.push(<div onClick={this.click.bind(this,option.totalPage)} className={c==0?"current":""}>{option.totalPage}</div>);
               pagerItems.push(<div onClick={this.click.bind(this,option.currentPage+1)} className={next}>下一页</div>)
-              return pagerItems;//r+';
+             //r+';
           }
+        return pagerItems;
     },
     click:function(currentPage){
- 
-        var option=this.getInitialState();
+
+        var option=this.props.option;//this.getInitialState();
         if(currentPage<1||currentPage>option.totalPage)
           return;
         option.currentPage=currentPage;
-        this.setState(option);
+        //this.setState(option);
+        this.props.loadData.loadFn({type:this.props.loadData.type,page:currentPage});
     },
     render: function () {
-        var option=this.state;//this.props.option;
+        var option=this.props.option;//this.state;//this.props.option;
+        //var option= this.state;//this.props.option;
         var r=this.init(option);
+
         return (
 
             <div className="pager" >

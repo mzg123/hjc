@@ -202,11 +202,6 @@ module.exports={
                  tc1:{
                      header:{
                          fields:[
-                             {tag:"序号",fieldName:"xh"}
-                             ,{tag:"出借人",fieldName:"cjr"}
-                             ,{tag:"出借金额 （元）",fieldName:"cjje"}
-                             ,{tag:"加入时间",fieldName:"jrsj"}
-                             ,{tag:"状态",fieldName:"zt"}
                          ]
                      }
                      ,body:{
@@ -217,6 +212,11 @@ module.exports={
                              ,{xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
                              ,{xh:3,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功"}
                          ]
+                     }
+                     ,pager: {
+                         currentPage:6
+                         ,totalPage:15
+
                      }
                  }
                 , tc2:{
@@ -239,6 +239,11 @@ module.exports={
                             ,{xh:13,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",xb:"男",zt:"成功"}
                         ]
                     }
+                    ,pager: {
+                        currentPage:2
+                        ,totalPage:3
+
+                    }
                 }
                 , tc3:{
                     header:{
@@ -260,6 +265,11 @@ module.exports={
                             ,{xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
                             ,{xh:23,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功"}
                         ]
+                    }
+                    ,pager: {
+                        currentPage:1
+                        ,totalPage:1
+
                     }
                 }
                 , tc4:{
@@ -284,10 +294,15 @@ module.exports={
                             ,{xh:33,cjr:"cjr",cjje:"10,000.00",jrsj:"2016-12-29 08:49:45",zt:"成功",zt1:"成功",zt2:"成功",zt3:"成功"}
                         ]
                     }
+                    ,pager: {
+                        currentPage:5
+                        ,totalPage:10
+
+                    }
                 }
             }
             ,tabData:{
-            currentTabIndex:1
+            currentTabIndex:0
             ,data:[
                 {
                     tag:"已充值"
@@ -317,6 +332,10 @@ module.exports={
                 state.tabData.currentTabIndex=action.tabIndex;
                 return deepCopy(state);
                 //return $.extend({},state);
+            case "loadData1":
+                state.tabContents.tc1=action.data;
+                return deepCopy(state);
+                break;
             default:
                 return state;
         }

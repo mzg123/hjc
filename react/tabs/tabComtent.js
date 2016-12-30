@@ -12,10 +12,7 @@ var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Li
 var TabComtent = React.createClass({
 
     componentDidMount() {
-        //this.props.router.setRouteLeaveHook(
-        //    this.props.route,
-        //    this.routerWillLeave
-        //)
+       this.props.loadData({type:"loadData1",page:1});
     }
     ,click:function(id){
         this.props.onItemClick(id);
@@ -39,10 +36,10 @@ var TabComtent = React.createClass({
                 <div className="tabs">
                     {tabs}
                 </div>
-                <Table isShow={currentTabIndex==0&&true}  option={this.props.tabContents.tc1}></Table>
-                <Table  isShow={currentTabIndex==1&&true} option={this.props.tabContents.tc2}></Table>
-                <Table  isShow={currentTabIndex==2&&true} option={this.props.tabContents.tc3}></Table>
-                <Table  isShow={currentTabIndex==3&&true} option={this.props.tabContents.tc4}></Table>
+                <Table isShow={currentTabIndex==0&&true}  data={this.props.tabContents.tc1}  loadData={{loadFn:this.props.loadData,type:"loadData1"}}></Table>
+                <Table  isShow={currentTabIndex==1&&true} data={this.props.tabContents.tc2}  loadData={{loadFn:this.props.loadData,type:"loadData2"}}></Table>
+                <Table  isShow={currentTabIndex==2&&true} data={this.props.tabContents.tc3}  loadData={{loadFn:this.props.loadData,type:"loadData3"}}></Table>
+                <Table  isShow={currentTabIndex==3&&true} data={this.props.tabContents.tc4}  loadData={{loadFn:this.props.loadData,type:"loadData4"}}></Table>
             </div>
 
 
@@ -64,6 +61,9 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(id){
             dispatch(actions.tabClick(id));
+        }
+        ,loadData:function(option){
+            dispatch(actions.loadData(option));
         }
 
     }

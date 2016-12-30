@@ -48,6 +48,7 @@ module.exports = {
     externals: {
         'react': 'React'
         ,'ReactDOM':'react-dom'
+        //,'fs':'fs'
     },
     module: {
         loaders: [
