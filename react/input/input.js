@@ -3,8 +3,14 @@ require("./input.scss");
 var Input=React.createClass({
     blur:function(evt){
 
-        this.props.tip=evt.target.value;
-        this.props.option.inputBlur({type:"onblur",data:{name:this.props.option.field.name,tip:"1111111111111"}})
+        var tip="",valid=this.props.option.valid,val=evt.target.value;
+        if(valid)
+        if(valid.require){
+            if(valid.require.value){
+                val.length>0?"":(tip=valid.require.tip);
+            }
+        }
+        this.props.option.inputBlur({type:"onblur",data:{name:this.props.option.field.name,tip:tip}})
     },
     render:function(){
         var type="text";//this.props.option.type;

@@ -360,16 +360,16 @@ module.exports={
                     {
                         name:"name",
                         valid:{
-                            require:true,
-                            regular:'/\d{2, 4}/'
+                            require:{value:true,tip:"必填项"},
+                            regular:{value:'/13\d{2, 4}/',tip:"不符合正则规则"}
                         }
                         ,tip:""
                     }
                     , {
                         name:"msg",
                         valid:{
-                            require:true,
-                            regular:'/13\d{2, 4}/'
+                            require:{value:true,tip:"必填项"},
+                            regular:{value:'/13\d{2, 4}/',tip:"不符合正则规则"}
                         }
                         ,tip:""
                     }
