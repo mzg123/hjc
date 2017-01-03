@@ -6,6 +6,7 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
     counter=reducer.counter,treeCounter=reducer.treeCounter,
     navCounter=reducer.navCounter,
     tabCounter=reducer.tabCounter,
+    formCounter=reducer.formCounter,
     initState=reducer.initState;
 /**
  * 这是一个 reducer，形式为 (state, action) => state 的纯函数。
@@ -22,7 +23,7 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
 
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter,tabCounter:tabCounter});
+var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter,tabCounter:tabCounter,formCounter:formCounter});
 var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 store.initState=initState;

@@ -8,6 +8,7 @@ var Tree=require("../../react/tree_react/tree.js");
 var Roller=require("../../react/roller/roller.js");
 var Test=require("../../react/tree_react/Test.js");
 var Tabs=require("../../react/tabs/tab.js");
+var Form=require("../../react/form/form.js");
 var TabComtent=require("../../react/tabs/tabComtent.js");
 var Modal=require("../../react/modal/modal.js");
 var ModalTest=require("../../react/modal/modalTest.js");
@@ -39,11 +40,11 @@ ReactDOM.render(
                 <Route path="tabs" outerClick={d}  onLeave={d} component={Tabs}/>
                 <Route path="tabcomtent" outerClick={d}  onLeave={d} component={TabComtent}/>
                 <Route path="modal"   onLeave={d} component={Modal}/>
-                <Route path="modals"    onLeave={d} component={ModalTest}/>
-
+                //<Route path="modals"    onLeave={d} component={ModalTest}/>
+                <Route path="form"   component={Form}/>
                 <Route path="tree"  onLeave={d} onEnter={d} component={Tree} />
             </Route>
-            <Route path="*" component={Modal}/>
+
 
         </Router>
 

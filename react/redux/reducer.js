@@ -129,6 +129,10 @@ module.exports={
                              tag:"tabcomtent"
                              ,href:"/tabcomtent"
                          }
+                         ,{
+                             tag:"form"
+                             ,href:"/form"
+                         }
                     ]
                 }
                 , {
@@ -343,6 +347,44 @@ module.exports={
                 return deepCopy(state);
             case "loadData4":
                 state.tabContents.tc4=action.data;
+                return deepCopy(state);
+            default:
+                return state;
+        }
+    }
+    ,formCounter:function(state,action){
+        state||(state=inits());
+        state.formData||(state=$.extend({},state,{
+            formData:{
+                fields:[
+                    {
+                        name:"name",
+                        valid:{
+                            require:true,
+                            regular:'/\d{2, 4}/'
+                        }
+                        ,tip:""
+                    }
+                    , {
+                        name:"msg",
+                        valid:{
+                            require:true,
+                            regular:'/13\d{2, 4}/'
+                        }
+                        ,tip:""
+                    }
+                ]
+            }
+        }))
+        switch(action.type){
+
+            case "onblur":
+                state.formData.fields.map(function(item,index){
+                    item.name==action.data.name&&(
+                        item.tip=action.data.tip
+                    )
+                });
+
                 return deepCopy(state);
             default:
                 return state;
