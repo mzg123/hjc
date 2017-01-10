@@ -17,6 +17,7 @@ var Form = React.createClass({
            <form>
              <Input option={{field:this.props.formData.fields[0],inputBlur:this.props.inputBlur}} />
              <Input option={{field:this.props.formData.fields[1],inputBlur:this.props.inputBlur}} />
+           {this.props.formData.isValid?<div>error</div>:<div>right</div>}
            </form>
         );
     }
@@ -26,7 +27,6 @@ var Form = React.createClass({
 const mapStateToProps =function (state) {
     return {
         formData:state.formCounter.formData
-
     }
 }
 

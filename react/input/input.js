@@ -3,10 +3,12 @@ require("./input.scss");
 var Input=React.createClass({
     blur:function(evt){
 
-        var tip="",valid=this.props.option.valid,val=evt.target.value;
+        var tip="",valid=this.props.option.field.valid,val=evt.target.value;
+        console.log(this.props.option);
         if(valid)
         if(valid.require){
             if(valid.require.value){
+
                 val.length>0?"":(tip=valid.require.tip);
             }
         }
@@ -18,7 +20,7 @@ var Input=React.createClass({
         return (
             <div className="input">
                <label  >{this.props.option.field.name}:</label> <input type={type} onBlur={this.blur.bind(this)}/>
-                 <div className="tip">111{this.props.option.field.tip}</div>
+                 <div className="tip">{this.props.option.field.tip}</div>
             </div>
 
         )

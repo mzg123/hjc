@@ -356,9 +356,11 @@ module.exports={
         state||(state=inits());
         state.formData||(state=$.extend({},state,{
             formData:{
+                isValid:false,
                 fields:[
                     {
                         name:"name",
+                        type:"test",
                         valid:{
                             require:{value:true,tip:"必填项"},
                             regular:{value:'/13\d{2, 4}/',tip:"不符合正则规则"}
@@ -367,6 +369,7 @@ module.exports={
                     }
                     , {
                         name:"msg",
+                        type:"test",
                         valid:{
                             require:{value:true,tip:"必填项"},
                             regular:{value:'/13\d{2, 4}/',tip:"不符合正则规则"}

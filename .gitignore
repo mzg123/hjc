@@ -49,4 +49,5 @@ Temporary Items
 /node_modules
 /es6/node_modules
 /vue/node_modules
-/vue/demo
+
+/vue/demo/node_modules
