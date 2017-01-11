@@ -81,35 +81,35 @@ module.exports = {
         plugins: ['transform-runtime']
     }
 
-//    ,plugins: [
-//        //new webpack.HtmlWebpackPlugin({
-//        //    filename: __dirname+'/1.html',
-//        //    inject:'body',
-//        //    hash:true
-//        //}),
-//        new ExtractTextPlugin("css/[name].css"),//分离css样式
-//        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
-//        //    compress: {
-//        //        warnings: false
-//        //    },
-//        //    output: {
-//        //        comments: false // remove all comments
-//        //    },
-//        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
-//        //}) ,
-//       new webpack.DefinePlugin({
-//            "process.env": {
-//                NODE_ENV: JSON.stringify("production")
-//            }
-//       })
-//        //,new webpack.ProvidePlugin({
-//        //    'Moment': 'moment',
-//        //    "$": "jquery",
-//        //    "jQuery": "jquery",
-//        //    "window.jQuery": "jquery",
-//        //    "React": "react"
-//        //})
-//        //,new webpack.HotModuleReplacementPlugin() //热加载
-//]
+    ,plugins: [
+        //new webpack.HtmlWebpackPlugin({
+        //    filename: __dirname+'/1.html',
+        //    inject:'body',
+        //    hash:true
+        //}),
+      //  new ExtractTextPlugin("css/[name].css"),//分离css样式
+        new webpack.optimize.UglifyJsPlugin({    //压缩代码
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false // remove all comments
+            },
+            except: ['$super', '$', 'exports', 'require']    //排除关键字
+        }) ,
+       //new webpack.DefinePlugin({
+       //     "process.env": {
+       //         NODE_ENV: JSON.stringify("production")
+       //     }
+       //})
+        //,new webpack.ProvidePlugin({
+        //    'Moment': 'moment',
+        //    "$": "jquery",
+        //    "jQuery": "jquery",
+        //    "window.jQuery": "jquery",
+        //    "React": "react"
+        //})
+        //,new webpack.HotModuleReplacementPlugin() //热加载
+]
 
 };
