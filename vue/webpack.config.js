@@ -13,6 +13,7 @@ module.exports = {
         //,modal: "./webpackbuildjs/mzg/modal.js"
         //roller: "./webpackbuildjs/mzg/roller.js"
         index: "./entry.js"
+        //hello: './component/helloword/hello.vue'
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         //,formselect: "./webpackbuildjs/mzg/formselect.js"
@@ -30,7 +31,12 @@ module.exports = {
     }
     //,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
     ,devtool: false,//配置生成Source Maps，选择合适的选项  eval-source-map
-
+    //resolve: {
+    //    alias: {
+    //        'vue$': './dist/vue.common.js'
+    //    }
+    //},
+    extensions: ['', '.vue'],
     //resolve: {
     //    modulesDirectories: ["./node_modules", "./node_modules/babel"]
     //},
@@ -57,11 +63,13 @@ module.exports = {
                 test: /\.vue$/,
                 exclude: /node_modules/,
                 loader: 'vue-loader'
-            }, {
+            },
+            {
                 test: /\.css$/,
                 exclude: /node_modules/,
                 loader: 'style-loader!css-loader'
-            }, {
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel'
