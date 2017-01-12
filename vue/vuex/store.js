@@ -3,8 +3,6 @@ import Vuex from 'vuex'
 
 
 Vue.use(Vuex)
-
-
 const moduleA = {
     state: {
         mzg:"苗志高"

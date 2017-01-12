@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/vuex/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/common/base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/vuex/getters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/vuex/modules.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/vuex/mutations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/vuex/store.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/component/helloword/routerhello.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/entry.js" afterPath="$PROJECT_DIR$/vue/entry.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/component/helloword/hello.vue" afterPath="$PROJECT_DIR$/vue/component/helloword/hello.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/component/helloword/helloItem.vue" afterPath="$PROJECT_DIR$/vue/component/helloword/helloItem.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es6/index.html" afterPath="$PROJECT_DIR$/es6/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/package.json" afterPath="$PROJECT_DIR$/vue/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/vuex/store.js" afterPath="$PROJECT_DIR$/vue/vuex/store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/webpack.config.js" afterPath="$PROJECT_DIR$/vue/webpack.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hjc.iws" />
@@ -41,8 +36,8 @@
       <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1503" max-vertical-offset="2280">
-              <caret line="98" column="12" selection-start-line="90" selection-start-column="5" selection-end-line="98" selection-end-column="12" />
+            <state vertical-scroll-proportion="-9.733334" vertical-offset="373" max-vertical-offset="2280">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -68,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hello.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/component/helloword/hello.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="798">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.053977273" vertical-offset="0" max-vertical-offset="855">
+              <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -88,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helloItem.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helloItem.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/component/helloword/helloItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="608">
+            <state vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="589">
               <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding />
             </state>
@@ -101,9 +96,11 @@
       <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/vuex/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1539">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1140">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#78#433#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +108,18 @@
       <file leaf-file-name="entry.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/entry.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1178">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routerhello.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/component/helloword/routerhello.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.4285715" vertical-offset="87" max-vertical-offset="665">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -126,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/react/tree_react/tree.css" />
         <option value="$PROJECT_DIR$/react/roller/roller.js" />
         <option value="$PROJECT_DIR$/react/nav/nav.scss" />
         <option value="$PROJECT_DIR$/react/tabs/tab.css" />
@@ -165,7 +171,6 @@
         <option value="$PROJECT_DIR$/vue/dist/vue.common.js" />
         <option value="$PROJECT_DIR$/vue/index.html" />
         <option value="$PROJECT_DIR$/vue/info" />
-        <option value="$PROJECT_DIR$/vue/webpack.config.js" />
         <option value="$PROJECT_DIR$/vue/common/base.scss" />
         <option value="$PROJECT_DIR$/vue/vuex/getters.js" />
         <option value="$PROJECT_DIR$/vue/vuex/mutations.js" />
@@ -173,10 +178,12 @@
         <option value="$PROJECT_DIR$/vue/vuex/modules.js" />
         <option value="$PROJECT_DIR$/vue/vuex/state.js" />
         <option value="$PROJECT_DIR$/es6/index.html" />
-        <option value="$PROJECT_DIR$/vue/entry.js" />
-        <option value="$PROJECT_DIR$/vue/component/helloword/hello.vue" />
         <option value="$PROJECT_DIR$/vue/component/helloword/helloItem.vue" />
         <option value="$PROJECT_DIR$/vue/vuex/store.js" />
+        <option value="$PROJECT_DIR$/vue/webpack.config.js" />
+        <option value="$PROJECT_DIR$/vue/component/helloword/routerhello.vue" />
+        <option value="$PROJECT_DIR$/vue/entry.js" />
+        <option value="$PROJECT_DIR$/vue/component/helloword/hello.vue" />
       </list>
     </option>
   </component>
@@ -354,38 +361,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="es6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="es6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="es6" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -724,12 +699,12 @@
       <workItem from="1484111681394" duration="19119000" />
       <workItem from="1484197943665" duration="121000" />
       <workItem from="1484198227657" duration="4385000" />
-      <workItem from="1484202837858" duration="1314000" />
+      <workItem from="1484202837858" duration="4576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216097000" />
+    <option name="totallyTimeSpent" value="219359000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -753,7 +728,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -765,7 +740,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578125" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15066965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25183824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -838,13 +813,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/react/data/tabcontent2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="798">
-          <caret line="29" column="3" selection-start-line="11" selection-start-column="9" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/info">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
@@ -1097,14 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1503" max-vertical-offset="2280">
-          <caret line="98" column="12" selection-start-line="90" selection-start-column="5" selection-end-line="98" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/common/base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="323">
@@ -1163,22 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/entry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/vuex/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1539">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/es6/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="513">
@@ -1187,18 +1131,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/component/helloword/hello.vue">
+    <entry file="file://$PROJECT_DIR$/vue/component/helloword/helloItem.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="798">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="589">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/component/helloword/helloItem.vue">
+    <entry file="file://$PROJECT_DIR$/vue/vuex/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="608">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1501">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#78#433#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.733334" vertical-offset="373" max-vertical-offset="2280">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/component/helloword/routerhello.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4285715" vertical-offset="87" max-vertical-offset="665">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1178">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/component/helloword/hello.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.053977273" vertical-offset="0" max-vertical-offset="855">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
           <folding />
         </state>
       </provider>

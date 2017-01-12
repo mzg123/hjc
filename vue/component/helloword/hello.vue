@@ -1,5 +1,8 @@
 <template>
-  <div class="example">{{msg}}{{this.$store.state.a.mzg}}{{doneTodos}} <helloItem :foo="msg" :t="t" :tt="tt" @alert="a"></helloItem></div>
+  <div class="example">{{msg}}{{this.$store.state.a.mzg}}{{doneTodos}} <helloItem :foo="msg" :t="t" :tt="tt" @alert="a"></helloItem>
+      <router-view class="main_content"></router-view>
+  </div>
+
 </template>
 <script>
   import helloItem from './helloItem.vue';
