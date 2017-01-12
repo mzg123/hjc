@@ -8,10 +8,10 @@
     data () {
      console.log(this.$store.getters.doneTodos,90879087);
       return {
-        msg: 'Hello world!'
+        msg: '000000000000000000!'
         ,t:"t1"
         ,tt:{
-          ttt:'90909090',rrr:2
+          ttt:'000000000000000000',rrr:2
         }
       }
     }

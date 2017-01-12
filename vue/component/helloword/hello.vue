@@ -1,6 +1,11 @@
 <template>
   <div class="example">{{msg}}{{this.$store.state.a.mzg}}{{doneTodos}} <helloItem :foo="msg" :t="t" :tt="tt" @alert="a"></helloItem>
+      <router-link to="/">Home</router-link>
+      <router-link to="/r">r</router-link>
+      <transition name="slide-right">
+
       <router-view class="main_content"></router-view>
+      </transition>
   </div>
 
 </template>

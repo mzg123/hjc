@@ -31,11 +31,11 @@ module.exports = {
     }
     //,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
     ,devtool: false,//配置生成Source Maps，选择合适的选项  eval-source-map
-    resolve: {
-        alias: {
-            'vue$': path.join(__dirname, 'dist')+'/js/vue2.1.8.js'
-        }
-    },
+    //resolve: {
+    //    alias: {
+    //        'vue$': path.join(__dirname, 'dist')+'/js/vue2.1.8.js'
+    //    }
+    //},
     extensions: ['', '.vue'],
     //resolve: {
     //    modulesDirectories: ["./node_modules", "./node_modules/babel"]

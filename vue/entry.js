@@ -7,7 +7,19 @@ import store from './vuex/store.js'
 Vue.use(VueRouter);
 
 // 定义路由组件
-import routerhello from './component/helloword/routerhello.vue'
+//import routerhello from './component/helloword/routerhello.vue'
+
+//异步加载 方式一
+const routerhello = resolve => {
+    // require.ensure 是 Webpack 的特殊语法，用来设置 code-split point
+    // （代码分块）
+    require.ensure(['./component/helloword/routerhello.vue'], () => {
+        resolve(require('./component/helloword/routerhello.vue'))
+    })
+}
+//异步加载 方式二
+//const Foo = resolve => require(['./component/helloword/routerhello.vue'], resolve)
+
 //const Worldcloud = require('components/cloud.vue');
 //const Building = require('components/building.vue');
 //const Canteen = require('components/canteen.vue');
@@ -33,6 +45,7 @@ const routes = [
 
 // 创建router实例
 const router = new VueRouter({
+    mode: 'history',
     routes
 });
 
@@ -47,11 +60,11 @@ new Vue({
     store,
     router,
 
-    components: {
-        'hello': hello
-    },
-   template: '<hello></hello>'
+   // components: {
+   //     'hello': hello
+   // },
+   //template: '<hello></hello>'
 
-    //render: (createElement) => createElement(hello)
+    render: (createElement) => createElement(hello)
 
 })
