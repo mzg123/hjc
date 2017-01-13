@@ -26,7 +26,7 @@ const moduleA = {
 
 const moduleB = {
     state: {
-        mzg:"苗志高1"
+        mzg:"yyyyyyyy"
     },
     mutations: {
     },
