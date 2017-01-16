@@ -64,10 +64,14 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'vue-loader'
             },
-            {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                loader: 'style-loader!css-loader'
+            //{
+            //    test: /\.css$/,
+            //    exclude: /node_modules/,
+            //    loader: 'style-loader!css-loader'
+            //},
+            {test: /\.scss?$/, exclude: /node_modules/,
+                //loader: 'css-loader!sass-loader',
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")
             },
             {
                 test: /\.js$/,
@@ -87,16 +91,16 @@ module.exports = {
         //    inject:'body',
         //    hash:true
         //}),
-      //  new ExtractTextPlugin("css/[name].css"),//分离css样式
-        new webpack.optimize.UglifyJsPlugin({    //压缩代码
-            compress: {
-                warnings: false
-            },
-            output: {
-                comments: false // remove all comments
-            },
-            except: ['$super', '$', 'exports', 'require']    //排除关键字
-        }) ,
+        new ExtractTextPlugin("css/[name].css"),//分离css样式
+        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
+        //    compress: {
+        //        warnings: false
+        //    },
+        //    output: {
+        //        comments: false // remove all comments
+        //    },
+        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
+        //}) ,
        //new webpack.DefinePlugin({
        //     "process.env": {
        //         NODE_ENV: JSON.stringify("production")

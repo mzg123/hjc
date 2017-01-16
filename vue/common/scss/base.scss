@@ -1,0 +1,24 @@
+$ft1:1rem;//文字12号大小
+$ft2:1.2rem;//文字14号大小
+$bodyColor:#f0efef;//全局body背FV景色
+ 
+$browserDefaultFontSize:12px;//默认字体大小
+$ipadBtnColor1:#cfad54;//圆形按钮北京颜色
+$ipadBtnColor2:#ffffff;//圆形按钮北京颜色（纯白色）
+$listTitleColor:#ffffff;
+$listTitleBgColor:#d0ac54;
+$listContentBgColor:#e2e2e4;
+$ipadBodyBg:#eeeeee;//ipad页面背景颜色
+$keyPointColor:#FF0000;
+$baseFont:宋体;
+
+$disableColor:#F5F5F5;
+
+@function pxToRem($px){
+	@return $px/$browserDefaultFontSize* 1rem;
+}
+
+
+
+
+

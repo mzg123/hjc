@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import hello from './component/helloword/hello.vue'
 import store from './vuex/store.js'
 
+
 Vue.use(VueRouter);
 
 // 定义路由组件

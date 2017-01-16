@@ -12,9 +12,9 @@
 <script>
   import helloItem from './helloItem.vue';
   import { mapState,mapGetters } from 'vuex';
+
   export default {
     data () {
-     console.log(this.$store.getters.doneTodos,90879087);
       return {
         msg: 'Hello world!'
         ,t:"t1"
@@ -36,10 +36,13 @@
     }
 
   }
+
 </script>
 
-<style>
+<style lang="sass">
+    @import '../../common/scss/common.scss';
 .example {
   color: red;
 }
+
 </style>

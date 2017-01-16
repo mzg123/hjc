@@ -5,7 +5,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 const moduleA = {
     state: {
-        mzg:"苗志高"
+        mzg:"mzg"
     },
     mutations: {
         modify:function(state){
