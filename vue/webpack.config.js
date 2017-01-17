@@ -12,7 +12,7 @@ module.exports = {
         //login: "./webpackbuildjs/mzg/login.js"
         //,modal: "./webpackbuildjs/mzg/modal.js"
         //roller: "./webpackbuildjs/mzg/roller.js"
-        index: "./entry.js"
+        example: "./example.js"
         //hello: './component/helloword/hello.vue'
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
