@@ -1,5 +1,8 @@
 @import 'base';
 
+body,html{
+  height: 100%;
+}
 .flex_con{
   display: -moz-box;  /* Firefox */
   display: -ms-flexbox;    /* IE10 */
@@ -8,9 +11,6 @@
   display: box;
   display: flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: gray;
 }
 .flex_dir_r{
   -webkit-box-orient:horizontal;
@@ -74,7 +74,14 @@
   -o-flex-wrap: wrap;
   flex-wrap:wrap;
 }
-
+.flex_p_100{
+  -prefix-box-flex: 1; /* old spec webkit, moz */
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 1;          /* Chrome */
+  -moz-box-flex: 1;         /* Firefox 19- */
+  -ms-flex: 1;              /* IE 10 */
+  flex: 1;
+}
 
 
 

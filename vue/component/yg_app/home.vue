@@ -1,9 +1,8 @@
 <template>
-    <div class="yg_app flex_con flex_dir_c" style="height: 100%">
+    <div class="">
 
+33333
 
-        <router-view class="main_content flex_p_100" style="height: 100%;background-color: red"></router-view>
-        <div class="footer flex_con flex_s_c flex_s_c">111</div>
     </div>
 
 </template>
@@ -38,11 +37,7 @@
 </script>
 
 <style lang="sass">
-    @import '../../common/scss/main.scss';
 
-    .footer{
-        height: pxToRem(30px);
-        line-height: pxToRem(30px);
-        font-size: pxToRem(20px); ;
-    }
+
+
 </style>

@@ -10,6 +10,7 @@ Vue.use(VueRouter);
 // 定义路由组件
 import routerhello from './component/helloword/routerhello.vue'
 import routerhello2 from './component/helloword/routerhello2.vue'
+import home from './component/yg_app/home.vue'
 
 //异步加载 方式一
 //const routerhello = resolve => {
@@ -40,7 +41,7 @@ import routerhello2 from './component/helloword/routerhello2.vue'
 
 // 定义路由
 const routes = [
-    { path: '/' },
+    { path: '/' , component:home},
     { path: '/r', component: routerhello }
     ,{ path: '/rr', component: routerhello2 }
 ];
@@ -55,7 +56,7 @@ const router = new VueRouter({
 
 /* eslint-disable no-new */
 new Vue({
-    el:'body',
+    el:'#yg_app',
     data:{
         mzg:"ddd"
     },
