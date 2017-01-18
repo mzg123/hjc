@@ -1,4 +1,5 @@
 @import 'base';
+@import 'mobilebase';
 
 /*基本元素样式定义
 //@media screen and (min-width:320px){
@@ -242,3 +243,13 @@ body {
   /*display: none;*/
   visibility: hidden;
 }
+
+/*footer start*/
+
+.footer{
+  position: fixed;
+  height: pxToRem(30px);
+  line-height: pxToRem(30px);
+}
+
+/*footer end*/

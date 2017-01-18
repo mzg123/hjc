@@ -8931,7 +8931,7 @@
 
 	exports.default = {
 	  data: function data() {
-	    console.log(this.$store.getters.doneTodos, 90879087);
+
 	    return {
 	      msg: 'Hello world!',
 	      t: "t1",

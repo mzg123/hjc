@@ -13,6 +13,7 @@ module.exports = {
         //,modal: "./webpackbuildjs/mzg/modal.js"
         //roller: "./webpackbuildjs/mzg/roller.js"
         example: "./example.js"
+        ,yg_app: "./yg_app.js"
         //hello: './component/helloword/hello.vue'
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
@@ -92,20 +93,20 @@ module.exports = {
         //    hash:true
         //}),
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
-        //    compress: {
-        //        warnings: false
-        //    },
-        //    output: {
-        //        comments: false // remove all comments
-        //    },
-        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
-        //}) ,
-       //new webpack.DefinePlugin({
-       //     "process.env": {
-       //         NODE_ENV: JSON.stringify("production")
-       //     }
-       //})
+        new webpack.optimize.UglifyJsPlugin({    //压缩代码
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false // remove all comments
+            },
+            except: ['$super', '$', 'exports', 'require']    //排除关键字
+        }) ,
+       new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
+       })
         //,new webpack.ProvidePlugin({
         //    'Moment': 'moment',
         //    "$": "jquery",

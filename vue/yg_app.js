@@ -1,8 +1,7 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router';
-import hello from './component/helloword/hello.vue'
-import main from './component/helloword/main.vue'
+import app from './component/yg_app/app.vue'
 import store from './vuex/store.js'
 
 
@@ -56,7 +55,7 @@ const router = new VueRouter({
 
 /* eslint-disable no-new */
 new Vue({
-    el:'#hello',
+    el:'body',
     data:{
         mzg:"ddd"
     },
@@ -68,6 +67,6 @@ new Vue({
    // },
    //template: '<hello></hello>'
 
-    render: (createElement) => createElement(main)
+    render: (createElement) => createElement(app)
 
 })
