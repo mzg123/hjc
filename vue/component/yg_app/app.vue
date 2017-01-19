@@ -1,9 +1,15 @@
 <template>
-    <div class="yg_app flex_con flex_dir_c" style="height: 100%">
+    <div class="yg_app flex_con flex_dir_c" >
 
+         <div class="flex_con flex_p_100">
+             <router-view  class="main_content flex_p_100"></router-view>
+         </div>
 
-        <router-view class="main_content flex_p_100" style="height: 100%;background-color: red"></router-view>
-        <div class="footer flex_con flex_s_c flex_s_c">111</div>
+        <div class="footer flex_con flex_dir_r flex_s_c flex_v_c" >
+            <div class="flex_p_100 align_c">首页</div>
+            <div class="flex_p_100 align_c">产品</div>
+            <div class="flex_p_100 align_c">我的</div>
+        </div>
     </div>
 
 </template>
@@ -40,6 +46,10 @@
 <style lang="sass">
     @import '../../common/scss/main.scss';
 
+    .yg_app,.main_content{
+        height:100%;
+        overflow-y: auto
+    }
     .footer{
         height: pxToRem(30px);
         line-height: pxToRem(30px);

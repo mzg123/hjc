@@ -6,10 +6,10 @@
   "scripts": {
     "start": "babel-node src/src.js",
     "server": "node server.js",
-    "build-webpack": "  webpack --progress --colors ",
+    "build": "  webpack --progress --colors ",
     "build-webpack2": "webpack --progress --colors --config webpack.config1.js ",
     "build": "babel src --out-dir lib",
-    "dev-webpack": " webpack-dev-server --hot --inline  "
+    "dev": " webpack-dev-server --hot --inline  "
   },
   "author": "mzg",
   "license": "ISC",

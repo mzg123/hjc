@@ -30,6 +30,7 @@ reduxStore.initState();
 
 function d(){console.log(3);}
 ReactDOM.render(
+
     <Provider store={reduxStore}>
         <Router history={browserHistory}>
 
