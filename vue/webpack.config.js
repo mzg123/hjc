@@ -13,7 +13,7 @@ module.exports = {
         //,modal: "./webpackbuildjs/mzg/modal.js"
         //roller: "./webpackbuildjs/mzg/roller.js"
         example: "./example.js"
-        ,yg_app: "./yg_app.js"
+        ,yg_app: ["./common/js/mobileAdapflex.js","./yg_app.js"]
         //hello: './component/helloword/hello.vue'
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
