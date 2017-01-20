@@ -70,6 +70,7 @@ module.exports = {
             //    exclude: /node_modules/,
             //    loader: 'style-loader!css-loader'
             //},
+            { test: /\.(png|jpg|gif)$/, loader: "url?limit=6"},
             {test: /\.scss?$/, exclude: /node_modules/,
                 //loader: 'css-loader!sass-loader',
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")

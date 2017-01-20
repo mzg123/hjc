@@ -165,7 +165,18 @@ input[type="checkbox"], input[type="radio"]
 
 :-ms-input-placeholder {
   color: #a3a3a3; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: keep-all;
+  word-wrap: break-word; }
 
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 body {
   background: #fff;
   margin:0px auto;

@@ -18,6 +18,14 @@ $disableColor:#F5F5F5;
 	@return $px/$browserDefaultFontSize* 1rem;
 }
 
+@mixin background($w,$h,$url,$opt:center  center no-repeat) {
+  background:url($url) $opt;
+  width:$w;
+  height:$h;
+  line-height: $h;
+
+}
+
 
 
 
