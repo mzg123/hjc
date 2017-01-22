@@ -1,34 +1,15 @@
 <template>
-    <div class="">
-
-<div>home</div>
-
-
-
-    </div>
-
+        <roller>home</roller>
 </template>
 <script>
-
+        import roller from '../common/roller/roller.vue';
     import { mapState,mapGetters } from 'vuex';
 
     export default {
-        data () {
-            return {
-                msg: 'Hello world!'
-                ,t:"t1"
-                ,tt:{
-                    ttt:'90909090',rrr:2
-                }
-            }
-        }
-    ,computed: {
+    computed: {
 
-        ...mapGetters([
-                'doneTodos',
-            ])
-        }
-//    ,components: { helloItem }
+            }
+    ,components: { roller }
     ,methods:{
             a:function(msg){
                 alert(msg);}
