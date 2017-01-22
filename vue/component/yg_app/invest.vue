@@ -1,9 +1,8 @@
 <template>
     <div class="">
 
-<div>home</div>
 
-
+        <div>invest</div>
 
     </div>
 

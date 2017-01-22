@@ -11,6 +11,8 @@ Vue.use(VueRouter);
 import routerhello from './component/helloword/routerhello.vue'
 import routerhello2 from './component/helloword/routerhello2.vue'
 import home from './component/yg_app/home.vue'
+import invest from './component/yg_app/invest.vue'
+import personal from './component/yg_app/personal.vue'
 
 //异步加载 方式一
 //const routerhello = resolve => {
@@ -41,9 +43,12 @@ import home from './component/yg_app/home.vue'
 
 // 定义路由
 const routes = [
-    { path: '/' , component:home},
-    { path: '/r', component: routerhello }
-    ,{ path: '/rr', component: routerhello2 }
+    { path: '/' , component:home
+
+    },
+    { path: '/home' , component:home},
+    { path: '/invest', component: invest }
+    ,{ path: '/personal', component: personal }
 ];
 
 // 创建router实例
@@ -52,13 +57,16 @@ const router = new VueRouter({
     routes
 });
 
+router.beforeEach((to, from, next) => {
+    (to.path=="/"&&from.path=="/")?next("/home"): next();
 
+})
 
 /* eslint-disable no-new */
 new Vue({
     el:'#yg_app',
     data:{
-        mzg:"ddd"
+
     },
     store,
     router,

@@ -24,11 +24,30 @@ const moduleA = {
     }
 }
 
-const moduleB = {
+const home = {
     state: {
-        mzg:"yyyyyyyy"
+        currentPage:"home",
+        homePage:"home",
+        investPage:"invest",
+        personalPage:"personal"
     },
     mutations: {
+        footerClick:function(state,obj){
+              switch (obj.index){
+                  case '1':
+                  state.currentPage="home";
+                  break;
+                  case '2':
+                      state.currentPage="invest";
+                      break;
+                  case '3':
+                      state.currentPage="personal";
+                      console.log(state);
+                      break;
+                  default:
+                      break;
+              }
+        }
     },
     actions: {
     },
@@ -36,10 +55,11 @@ const moduleB = {
     }
 }
 
+
 const store = new Vuex.Store({
     modules: {
         a: moduleA,
-        b: moduleB
+        home: home
     }
 })
 
