@@ -30,9 +30,61 @@ const home = {
         homePage:"home",
         investPage:"invest",
         personalPage:"personal"
+        ,banners:{
+            currentBannerIndex:0
+            ,data:[
+                {
+                    url:'b1'
+                    ,width:'750px'
+                    ,height:'338px'
+                }
+                ,{
+                    url:'b2'
+                    ,width:'750px'
+                    ,height:'338px'
+                }
+                ,{
+                    url:'b3'
+                    ,width:'750px'
+                    ,height:'338px'
+                }
+                ,{
+                    url:'b3'
+                    ,width:'750px'
+                    ,height:'338px'
+                }
+                ,{
+                    url:'b3'
+                    ,width:'750px'
+                    ,height:'338px'
+                }
+            ]
+        }
     },
     mutations: {
-        footerClick:function(state,obj){
+        bannerAuto:function(state,obj){
+            switch (obj.index){
+                case 0:
+                    state.banners.currentBannerIndex=0;
+                    break;
+                case 2:
+                    state.banners.currentBannerIndex=2;
+                    break;
+                case 1:
+                    state.banners.currentBannerIndex=1;
+                    break;
+                case 3:
+                    state.banners.currentBannerIndex=3;
+                    break;
+                case 4:
+                    state.banners.currentBannerIndex=4;
+                    break;
+                default:
+                    state.banners.currentBannerIndex=0;
+                    break;
+            }
+        }
+        ,footerClick:function(state,obj){
               switch (obj.index){
                   case '1':
                   state.currentPage="home";
@@ -42,7 +94,6 @@ const home = {
                       break;
                   case '3':
                       state.currentPage="personal";
-                      console.log(state);
                       break;
                   default:
                       break;

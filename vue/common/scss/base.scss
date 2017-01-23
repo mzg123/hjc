@@ -28,6 +28,25 @@ $disableColor:#F5F5F5;
 background-size:contain;
 }
 
+@mixin border-radius($tl:100%,$tr:100%,$bl:100%,$br:100%){
+  -moz-border-radius-topleft: $tl;
+  -moz-border-radius-topright: $tr;
+  -moz-border-radius-bottomright: $bl;
+  -moz-border-radius-bottomleft: $br;
+  -o-border-radius-topleft:$tl;
+  -o-border-radius-topright:$tr;
+  -o-border-radius-bottomright: $bl;
+  -o-border-radius-bottomleft:$br;
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius:  $bl;
+  -webkit-border-bottom-left-radius: $br;
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $bl;
+  border-bottom-left-radius: $br
+}
+
 
 
 
