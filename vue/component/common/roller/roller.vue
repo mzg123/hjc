@@ -19,8 +19,9 @@
 
     export default {
     mounted(){
-    var last=0,count=this.banners.length-1,next=0,auto=this.auto,currentBannerIndex=this.currentBannerIndex;;
-          setInterval(function(){
+    var last=0,count=this.banners.length-1,next=0,auto=this.auto,currentBannerIndex=this.currentBannerIndex;
+           clearInterval(window['interval']);
+           window['interval']=setInterval(function(){
 
             if(currentBannerIndex<count&&last<=currentBannerIndex){
                if(last==currentBannerIndex){next=currentBannerIndex++}

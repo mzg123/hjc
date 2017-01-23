@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/common/scss/base.scss" afterPath="$PROJECT_DIR$/vue/common/scss/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/dist/js/example.js" afterPath="$PROJECT_DIR$/vue/dist/js/example.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/component/common/roller/roller.vue" afterPath="$PROJECT_DIR$/vue/component/common/roller/roller.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/dist/js/yg_app.js" afterPath="$PROJECT_DIR$/vue/dist/js/yg_app.js" />
@@ -54,7 +52,7 @@
       <file leaf-file-name="app.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/component/yg_app/app.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="2185">
+            <state vertical-scroll-proportion="14.25" vertical-offset="570" max-vertical-offset="2185">
               <caret line="9" column="55" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="55" />
               <folding>
                 <marker date="1485070269246" expanded="true" signature="1272:1274" placeholder="{...}" />
@@ -88,32 +86,32 @@
       <file leaf-file-name="roller.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/component/common/roller/roller.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6351744" vertical-offset="969" max-vertical-offset="2052">
-              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.68818897" vertical-offset="0" max-vertical-offset="2071">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <marker date="1485161427517" expanded="true" signature="809:824" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="809:1509" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="809:1524" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="809:1532" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="809:2049" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="824:946" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="824:1497" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="824:1509" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="968:1205" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="968:1462" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="968:1497" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1037:1205" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1239:1319" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1323:1462" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1323:1497" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1365:1462" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1531:1818" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1550:1733" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1743:1808" placeholder="//..." />
-                <marker date="1485161427517" expanded="true" signature="1865:2042" placeholder="{...}" />
-                <marker date="1485161427517" expanded="true" signature="1899:2032" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="809:824" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="809:1574" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="809:1589" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="809:1597" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="809:2114" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="824:991" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="824:1562" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="824:1574" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1033:1270" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1033:1527" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1033:1562" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1102:1270" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1304:1384" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1388:1527" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1388:1562" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1430:1527" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1596:1883" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1615:1798" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1808:1873" placeholder="//..." />
+                <marker date="1485163260757" expanded="true" signature="1930:2107" placeholder="{...}" />
+                <marker date="1485163260757" expanded="true" signature="1964:2097" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,8 +120,8 @@
       <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/common/scss/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.75" vertical-offset="181" max-vertical-offset="1064">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state vertical-scroll-proportion="-10.178572" vertical-offset="171" max-vertical-offset="1064">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -333,144 +331,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vuex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -850,12 +710,12 @@
       <workItem from="1484644644171" duration="3357000" />
       <workItem from="1484717167799" duration="39254000" />
       <workItem from="1484897195230" duration="7545000" />
-      <workItem from="1485046555324" duration="39395000" />
+      <workItem from="1485046555324" duration="40550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341298000" />
+    <option name="totallyTimeSpent" value="342453000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -892,9 +752,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15307263" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2122905" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16259168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24877751" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39664805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1312,9 +1172,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue/component/yg_app/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="589">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/common/scss/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.178572" vertical-offset="171" max-vertical-offset="1064">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue/component/yg_app/app.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="2185">
+        <state vertical-scroll-proportion="14.25" vertical-offset="570" max-vertical-offset="2185">
           <caret line="9" column="55" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="55" />
           <folding>
             <marker date="1485070269246" expanded="true" signature="1272:1274" placeholder="{...}" />
@@ -1344,50 +1220,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/component/yg_app/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="589">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/common/scss/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.75" vertical-offset="181" max-vertical-offset="1064">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/component/common/roller/roller.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6351744" vertical-offset="969" max-vertical-offset="2052">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.68818897" vertical-offset="0" max-vertical-offset="2071">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <marker date="1485161427517" expanded="true" signature="809:824" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="809:1509" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="809:1524" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="809:1532" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="809:2049" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="824:946" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="824:1497" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="824:1509" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="968:1205" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="968:1462" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="968:1497" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1037:1205" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1239:1319" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1323:1462" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1323:1497" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1365:1462" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1531:1818" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1550:1733" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1743:1808" placeholder="//..." />
-            <marker date="1485161427517" expanded="true" signature="1865:2042" placeholder="{...}" />
-            <marker date="1485161427517" expanded="true" signature="1899:2032" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="809:824" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="809:1574" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="809:1589" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="809:1597" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="809:2114" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="824:991" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="824:1562" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="824:1574" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1033:1270" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1033:1527" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1033:1562" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1102:1270" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1304:1384" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1388:1527" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1388:1562" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1430:1527" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1596:1883" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1615:1798" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1808:1873" placeholder="//..." />
+            <marker date="1485163260757" expanded="true" signature="1930:2107" placeholder="{...}" />
+            <marker date="1485163260757" expanded="true" signature="1964:2097" placeholder="{...}" />
           </folding>
         </state>
       </provider>
