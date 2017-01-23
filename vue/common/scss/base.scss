@@ -17,9 +17,6 @@ $disableColor:#F5F5F5;
 @function pxToRem($px){
 	@return $px/$browserDefaultFontSize* 1rem;
 }
-.dddd{
-  color:red;
-}
 @mixin background($w,$h,$url,$opt:center  center no-repeat) {
   background:url($url) $opt;
   width:$w;

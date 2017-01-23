@@ -1,7 +1,7 @@
 <template>
     <div class="roller " >
         <div style="position: relative;width:100%;overflow:hidden;">
-            <div style="position: relative":style="{  'left':-+currentBannerIndex*100 + '%','width':bannersCount*100 + '%'}"  >
+            <div class="con" style="position: relative":style="{  'left':-+currentBannerIndex*100 + '%','width':bannersCount*100 + '%'}"  >
                 <div  v-for="(item,i) in banners" key="item.url"  :class="[i==currentBannerIndex?'currentBanner':'Banner',item.url]" :style="{'width':(100/bannersCount).toFixed(2)+'%'}">{{i}}</div>
             </div>
             <div class="tip flex_con flex_dir_r flex_s_c flex_p_100">
@@ -64,13 +64,17 @@
       @include background(pxToRem(750px),pxToRem(338px),'../../../dist/image/banner1.png');
       }
     .b2{
-    @include background(pxToRem(750px),pxToRem(338px),'../../../dist/image/banner1.png');
+    @include background(pxToRem(750px),pxToRem(338px),'../../../dist/image/banner.png');
     }
     .b3{
     @include background(pxToRem(750px),pxToRem(338px),'../../../dist/image/banner1.png');
     }
 .roller{
      position: relative;
+    .con{
+        transition: left 1s;
+    }
+
     .currentBanner{
         display: inline-block;
     }
