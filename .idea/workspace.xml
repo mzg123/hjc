@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/component/common/roller/roller.vue" afterPath="$PROJECT_DIR$/vue/component/common/roller/roller.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/common/js/touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/common/js/touch.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/dist/js/yg_app.js" afterPath="$PROJECT_DIR$/vue/dist/js/yg_app.js" />
     </list>
     <ignored path="hjc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="roller.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="roller.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/component/common/roller/roller.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68818897" vertical-offset="0" max-vertical-offset="2071">
+            <state vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="2071">
               <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -113,6 +113,16 @@
                 <marker date="1485163260757" expanded="true" signature="1930:2107" placeholder="{...}" />
                 <marker date="1485163260757" expanded="true" signature="1964:2097" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="touch.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue/common/js/touch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.943787" vertical-offset="17906" max-vertical-offset="18658">
+              <caret line="976" column="4" selection-start-line="976" selection-start-column="4" selection-end-line="976" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,16 +157,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helloItem.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/component/helloword/helloItem.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="608">
-              <caret line="1" column="58" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/vuex/store.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -175,8 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/react/form/form.js" />
-        <option value="$PROJECT_DIR$/vue/demo/src/main.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/vue/dist/js/vue2.1.8.js" />
         <option value="$PROJECT_DIR$/vue/package.json" />
@@ -226,6 +224,8 @@
         <option value="$PROJECT_DIR$/vue/vuex/store.js" />
         <option value="$PROJECT_DIR$/vue/common/scss/base.scss" />
         <option value="$PROJECT_DIR$/vue/component/common/roller/roller.vue" />
+        <option value="$PROJECT_DIR$/vue/common/js/touch.js" />
+        <option value="$PROJECT_DIR$/vue/common/js/touch.min.js" />
       </list>
     </option>
   </component>
@@ -331,6 +331,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="react" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,12 +764,12 @@
       <workItem from="1484644644171" duration="3357000" />
       <workItem from="1484717167799" duration="39254000" />
       <workItem from="1484897195230" duration="7545000" />
-      <workItem from="1485046555324" duration="40550000" />
+      <workItem from="1485046555324" duration="41162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342453000" />
+    <option name="totallyTimeSpent" value="343065000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -739,7 +793,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -752,7 +806,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2122905" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2122905" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24877751" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -824,20 +878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/react/form/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30377907" vertical-offset="114" max-vertical-offset="1045">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/redux/assist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="688">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/info/info">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8979933" vertical-offset="3339" max-vertical-offset="4009">
@@ -1222,7 +1262,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/component/common/roller/roller.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68818897" vertical-offset="0" max-vertical-offset="2071">
+        <state vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="2071">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1249,6 +1289,24 @@
             <marker date="1485163260757" expanded="true" signature="1930:2107" placeholder="{...}" />
             <marker date="1485163260757" expanded="true" signature="1964:2097" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/common/js/touch.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028657617" vertical-offset="0" max-vertical-offset="663">
+          <caret line="1" column="12984" selection-start-line="1" selection-start-column="12984" selection-end-line="1" selection-end-column="12984" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/common/js/touch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.943787" vertical-offset="17906" max-vertical-offset="18658">
+          <caret line="976" column="4" selection-start-line="976" selection-start-column="4" selection-end-line="976" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
