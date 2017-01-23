@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/common/js/touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/common/js/touch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/common/js/touchu-directives.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hjc.iws" />
@@ -117,12 +116,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="touch.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="touch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/common/js/touch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.943787" vertical-offset="17906" max-vertical-offset="18658">
+            <state vertical-scroll-proportion="0.0" vertical-offset="17906" max-vertical-offset="18658">
               <caret line="976" column="4" selection-start-line="976" selection-start-column="4" selection-end-line="976" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="touchu-directives.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue/common/js/touchu-directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="2" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/vue/dist/js/vue2.1.8.js" />
         <option value="$PROJECT_DIR$/vue/package.json" />
         <option value="$PROJECT_DIR$/vue/dist/vue.common.js" />
@@ -226,6 +236,7 @@
         <option value="$PROJECT_DIR$/vue/component/common/roller/roller.vue" />
         <option value="$PROJECT_DIR$/vue/common/js/touch.js" />
         <option value="$PROJECT_DIR$/vue/common/js/touch.min.js" />
+        <option value="$PROJECT_DIR$/vue/common/js/touchu-directives.js" />
       </list>
     </option>
   </component>
@@ -764,12 +775,12 @@
       <workItem from="1484644644171" duration="3357000" />
       <workItem from="1484717167799" duration="39254000" />
       <workItem from="1484897195230" duration="7545000" />
-      <workItem from="1485046555324" duration="41162000" />
+      <workItem from="1485046555324" duration="41580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343065000" />
+    <option name="totallyTimeSpent" value="343483000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -878,13 +889,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/info/info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8979933" vertical-offset="3339" max-vertical-offset="4009">
-          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/info/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3040">
@@ -1304,9 +1308,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/common/js/touch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.943787" vertical-offset="17906" max-vertical-offset="18658">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17906" max-vertical-offset="18658">
           <caret line="976" column="4" selection-start-line="976" selection-start-column="4" selection-end-line="976" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/common/js/touchu-directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="2" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
