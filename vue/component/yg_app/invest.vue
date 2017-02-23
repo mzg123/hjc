@@ -39,6 +39,9 @@
 
 <style lang="sass">
 
+    .mzg {
 
+        color:red;
+    }
 
 </style>
