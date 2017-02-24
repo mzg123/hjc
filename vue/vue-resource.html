@@ -60,21 +60,21 @@
         methods: {
             getCustomers: function() {
 
-                this.$http.jsonp("https://10.0.130.72:7443/u/productSettled?planType='30'&startDate='2016-11-22'&endDate='2017-02-22'&creditStatus='cyz'&page=1")
-                        .then(function(response) {
-                            console.log(response);
-                        })
-                        .catch(function(response) {
-                            console.log(response)
-                        })
-
-//                this.$http.get(this.apiUrl)
-//                        .then((response) => {
-//                            this.$set('gridData', response.data)
+//                this.$http.jsonp("https://10.0.130.72:7443/u/productSettled?planType='30'&startDate='2016-11-22'&endDate='2017-02-22'&creditStatus='cyz'&page=1")
+//                        .then(function(response) {
+//                            console.log(response);
 //                        })
 //                        .catch(function(response) {
 //                            console.log(response)
 //                        })
+
+                this.$http.jsonp("http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js")
+                        .then(function(response){
+                            console.log(response,99999)
+                        })
+                        .catch(function(response) {
+                            console.log(response)
+                        })
             }
         }
     })
