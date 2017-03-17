@@ -1,3 +1,4 @@
+npm install cnpm -g --registry=https://registry.npm.taobao.org
 Gulp自动添加版本号
 推荐使用gulp-rev + gulp-rev-collector是比较方便的方法，结果如下:
 
