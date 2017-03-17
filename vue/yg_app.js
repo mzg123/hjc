@@ -57,6 +57,7 @@ const router = new VueRouter({
     routes
 });
 
+
 router.beforeEach((to, from, next) => {
     (to.path=="/"&&from.path=="/")?next("/home"): next();
 

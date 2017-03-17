@@ -102,12 +102,14 @@ module.exports = {
                 comments: false // remove all comments
             },
             except: ['$super', '$', 'exports', 'require']    //排除关键字
-        }) ,
-       new webpack.DefinePlugin({
-            "process.env": {
-                NODE_ENV: JSON.stringify("production")
-            }
-       })
+        })
+       // , new webpack.DefinePlugin({
+       //     "process.env": {
+       //         NODE_ENV: JSON.stringify("production")
+       //     }
+       //})
+
+
         //,new webpack.ProvidePlugin({
         //    'Moment': 'moment',
         //    "$": "jquery",
