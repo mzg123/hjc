@@ -25,7 +25,7 @@
     "debug": "~2.2.0",
     "echarts": "^3.4.0",
     "ejs-locals": "^1.0.2",
-    "express": "~4.13.4",
+    "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.4",
     "fs": "0.0.1-security",

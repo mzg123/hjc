@@ -1,14 +1,13 @@
 var React = require('react');
 var reactRedux = require('react-redux')
-require("./nav.scss");
+require("./nav.css");
 var Redux=require("redux");
 var actions=require("../redux/actions.js");
 var assist=require("../redux/assist.js");
 
 var Modal=require("../../react/modal/modal.js");
 var Modal2=require("../../react/modal/modal.js");
-//var reactRouter=require('react-router');
-//import reactRouter from 'react-router';
+
 import { Link } from 'react-router';
 var connect=reactRedux.connect,provider =reactRedux.Provider;
 
@@ -145,4 +144,5 @@ var navcon=connect(
     mapStateToProps,
     mapDispatchToProps
 )(nav);
-export default navcon;
+//export default navcon;
+module.exports =navcon;
